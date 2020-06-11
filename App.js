@@ -1,14 +1,39 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, SafeAreaView, Keyboard, TouchableWithoutFeedback } from 'react-native';
+import { NavigationContainer, StackActions } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import HomeScreen from './screens/HomeScreen';
+import SettingsScreen from './screens/SettingsScreen';
+import AboutScreen from './screens/AboutScreen';
+import CustomScreen from './screens/CustomScreen';
+import CardScreen from './screens/CardScreen';
+import ProgressScreen from './screens/ProgressScreen';
 
+const Stack = createStackNavigator();
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <NavigationContainer>
+      <StackActions.Navigator screenOptions={navStyling}>
+        <Stack.Screen name="Home" component={HomeScreen}/>
+        <Stack.Screen name="Settings" component={SettingsScreen}/>
+        <Stack.Screen name="About" component={AboutScreen}/>
+        <Stack.Screen name="Customize" component={CustomScreen}/>
+        <Stack.Screen name="Cards" component={CardScreen}/>
+        <Stack.Screen name="Progress" component={ProgressScreen}/>
+      </StackActions.Navigator>
+    </NavigationContainer>
   );
 }
 
+const navStyling = {
+  headerStyle: {
+    backgroundColor: '#0065A4',
+  },
+  headerTintColor: '#fff',
+  headerTitleStyle: {
+    fontWeight: 'bold',
+  },
+};
 const styles = StyleSheet.create({
   container: {
     flex: 1,
