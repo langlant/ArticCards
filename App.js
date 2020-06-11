@@ -10,6 +10,7 @@ import CardScreen from './screens/CardScreen';
 import ProgressScreen from './screens/ProgressScreen';
 
 const Stack = createStackNavigator();
+
 export default function App() {
   return (
     <NavigationContainer>
