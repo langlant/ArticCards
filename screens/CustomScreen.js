@@ -8,3 +8,5 @@ const CustomScreen = () =>{
         </View>
     )
 }
+
+export default CustomScreen;

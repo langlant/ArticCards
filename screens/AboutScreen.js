@@ -9,3 +9,5 @@ const AboutScreen = () =>{
         </View>
     )
 }
+
+export default AboutScreen;

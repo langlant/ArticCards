@@ -60,3 +60,5 @@ const HomeScreen = ({navigation}) => {
         </View>
     );
 };
+
+export default HomeScreen;

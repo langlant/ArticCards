@@ -9,3 +9,5 @@ const ProgressScreen = () =>{
         </View>
     )
 }
+
+export default ProgressScreen;

@@ -9,3 +9,5 @@ const CardScreen = () =>{
         </View>
     )
 }
+
+export default CardScreen;
