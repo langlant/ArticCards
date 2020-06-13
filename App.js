@@ -14,14 +14,14 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <StackActions.Navigator screenOptions={navStyling}>
+      <Stack.Navigator screenOptions={navStyling}>
         <Stack.Screen name="Home" component={HomeScreen}/>
         <Stack.Screen name="Settings" component={SettingsScreen}/>
         <Stack.Screen name="About" component={AboutScreen}/>
         <Stack.Screen name="Customize" component={CustomScreen}/>
         <Stack.Screen name="Cards" component={CardScreen}/>
         <Stack.Screen name="Progress" component={ProgressScreen}/>
-      </StackActions.Navigator>
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }

@@ -27,12 +27,7 @@ const HomeScreen = ({navigation}) => {
               navigation.navigate('About')
             }
           >
-            <Feather
-              style={styles.headerButton}
-              name="settings"
-              size={24}
-              color="#fff"
-            />
+            <Text style={styles.headerButton}> About </Text>
           </TouchableOpacity>
         ),
       });
@@ -49,10 +44,12 @@ const HomeScreen = ({navigation}) => {
                     />
                     <Button
                     titel="Progress"
+                    style={styles.padding}
                     onPress={() => navigation.navigate('Progress')}
                     />
                     <Button
                     title="Customize"
+                    style={styles.padding}
                     onPress={() => navigation.navigate('Customize')}
                     />
                 </View>
@@ -60,5 +57,52 @@ const HomeScreen = ({navigation}) => {
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 10,
+    backgroundColor: '#E8EAF6',
+    flex: 1,
+  },
+  headerButton: {
+    color: '#fff',
+    fontWeight: 'bold',
+    margin: 10,
+  },
+  buttons: {
+    padding: 10,
+  },
+  inputError: {
+    color: 'red',
+  },
+  input: {
+    padding: 10,
+  },
+  resultsGrid: {
+    borderColor: '#000',
+    borderWidth: 1,
+  },
+  resultsRow: {
+    flexDirection: 'row',
+    borderColor: '#000',
+    borderBottomWidth: 1,
+  },
+  resultsLabelContainer: {
+    borderRightWidth: 1,
+    borderRightColor: '#000',
+    flex: 1,
+  },
+  resultsLabelText: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    padding: 10,
+  },
+  resultsValueText: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    flex: 1,
+    padding: 10,
+  },
+});
 
 export default HomeScreen;

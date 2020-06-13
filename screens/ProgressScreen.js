@@ -7,6 +7,8 @@ import { FlatList } from "react-native-gesture-handler";
 
 const ProgressScreen = ({navigation}) =>{
     //display mastered cards, possibly in the future add category mastery
+    // each category is marked numerator/denominator and converted to percentage rounded to xx.x%
+    //this gets adjusted when new cards get added.
     return(
         <View>
             <Text>Progress</Text>

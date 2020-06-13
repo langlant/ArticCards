@@ -6,6 +6,8 @@ import { FlatList } from "react-native-gesture-handler";
 
 const SettingsScreen = ({navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
+        //Both of which will be using flatlists preferably side by side
+        //A card will only be counted if it meets both values being marked true (category and alpha)
     return(
         <View>
             <Text>Settings</Text>
