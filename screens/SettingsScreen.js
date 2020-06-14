@@ -80,7 +80,9 @@ const SettingsScreen = ({route, navigation}) =>{
 
     function buildDeck() {
         //if a card's  (aType == alType && cType == arType) && (addCV == true && addAlpha == true)
-        for 
+        var deck = [];
+
+       for 
     }
     return(
         <View>

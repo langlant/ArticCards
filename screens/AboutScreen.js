@@ -1,8 +1,5 @@
-import React, { useState, useRef,   useEffect } from "react";
-import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback, Linking } from "react-native";
-import { Button, Input, Card } from "react-native-elements";
-import { Feather } from "@expo/vector-icons";
-import { FlatList } from "react-native-gesture-handler";
+import React from "react";
+import { StyleSheet, Text, View, Linking } from "react-native";
 
 const AboutScreen = ({navigation}) =>{
     
