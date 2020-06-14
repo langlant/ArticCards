@@ -58,7 +58,6 @@ const SettingsScreen = ({navigation}) =>{
                 onPress={() => {
                     let newArr = [...articType];
                     newArr[index] = {...item, addCV: !item.addCV}
-                    setCard(newArr);
                 }}
             />
         )
@@ -67,12 +66,11 @@ const SettingsScreen = ({navigation}) =>{
     const renderAlphaType = ({index, item}) =>{
         return(
             <CheckBox
-                title={item.cType}
-                checked={item.addCV}
+                title={item.aType}
+                checked={item.addAlpha}
                 onPress={() => {
                     let newArr = [...articType];
                     newArr[index] = {...item, addCV: !item.addCV}
-                    setCard(newArr);
                 }}
             />
         )
@@ -84,12 +82,12 @@ const SettingsScreen = ({navigation}) =>{
                 keyExtractor={(item) => item.cType}
                 data={articType}
                 renderItem={renderCVType}
-                />
-                <FlatList  
+            />
+            <FlatList  
                 keyExtractor={(item) => item.aType}
                 data={alphaType}
                 renderItem={renderAlphaType}
-                />
+            />
         </View>
         )
 
