@@ -101,13 +101,16 @@ const SettingsScreen = ({route, navigation}) =>{
 
 
     return(
-        <View>
-            <Text>Settings</Text>
+        <View style={styles.container}>
+            <Text style={styles.textmenu}>Artic Type</Text>
+            <Text style={styles.textsubmenu}>Select what words to include based on their cononants and vowels</Text>
             <FlatList  
                 keyExtractor={(item) => item.alType}
                 data={articType}
                 renderItem={renderCVType}
             />
+            <Text style={styles.textmenu}>Alphabet Type</Text>
+            <Text style={styles.textsubmenu}> Select what words to include based on their starting letter</Text>
             <FlatList  
                 keyExtractor={(item) => item.alType}
                 data={alphaType}
@@ -118,5 +121,20 @@ const SettingsScreen = ({route, navigation}) =>{
 
 }
 
+const styles = StyleSheet.create({
+    container: {
+      padding: 10,
+      backgroundColor: '#E8EAF6',
+      flex: 1,
+    },
+    textmenu: {
+      textAlign: 'center',
+      fontSize: 20
+    },
+    textsubmenu:{
+      textAlign: 'center',
+      fontSize: 5
+    },
+})
 
 export default SettingsScreen;

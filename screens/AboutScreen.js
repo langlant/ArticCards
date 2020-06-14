@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Linking } from "react-native";
 const AboutScreen = ({navigation}) =>{
     
     return(
-        <View>
+        <View style={styles.container}>
             <Text>This app was created to be an aid to your child's development. By no means is this meant to replace your child's speech therapy needs. If you feel your child might be experiencing delays in speech, please seek the advice of professionals.</Text>
             <Text>For more information please visit: </Text>
             <Text
@@ -17,4 +17,11 @@ const AboutScreen = ({navigation}) =>{
     )
 }
 
+const styles = StyleSheet.create({
+    container: {
+      padding: 10,
+      backgroundColor: '#E8EAF6',
+      flex: 1,
+    },
+})
 export default AboutScreen;

@@ -3,7 +3,7 @@ import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFee
 import { Button, Input, Card } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { FlatList } from "react-native-gesture-handler";
-import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
+import { initArticDB } from '../helpers/fb-settings';
 
 
 const HomeScreen = ({navigation}) => {
