@@ -1,0 +1,875 @@
+{"articCards":[
+    {
+        "word": "A (eh+ee)",
+        "imageUrl": "",
+        "aType": "A",
+        "cType": "VV",
+        "mastery": false
+    },
+    {
+        "word": "Ow (ah+ooh",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VV",
+        "mastery": false
+    },
+    {
+        "word": "Oy",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VV",
+        "mastery": false     
+    },
+    {
+        "word": "Eye (ah+ee",
+        "imageUrl":  "",
+        "aType": "E",
+        "cType": "VV",
+        "mastery": false
+    },
+    {
+        "word": "iPad (eye pa or ah pa)",
+        "imageUrl":  "",
+        "aType": "I",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Elmo (eh mow or eh ma)",
+        "imageUrl":  "",
+        "aType": "E",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Open (oh pa)",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VCV",
+        "mastery": false   
+    },
+    {   "word": "Oboe",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "All gone (ah ga or ah da)",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Elbow (eh bow)",
+        "imageUrl":  "",
+        "aType": "E",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Apple (aah po or aah pah)",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "All done (ah da)",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Eddie (or eh da",
+        "imageUrl":  "",
+        "aType": "E",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Empty (eh tee or eh ta",
+        "imageUrl":  "",
+        "aType": "E",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Under (ah da)",
+        "imageUrl":  "",
+        "aType": "U",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Again (ah ga or ah da)",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Anna",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Away (or ah wa)",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Oh no",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Otter",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VCV",
+        "mastery": false
+    },
+    {
+        "word": "Daddy",
+        "imageUrl":  "",
+        "aType": "D",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Mommy",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Baby",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Puppy",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Paper (pay pa)",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Turtle",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Nanny",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "People",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Mummy",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Nana",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },    {
+        "word": "Tato",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Bobby",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "C1V1C1V2",
+        "mastery": false
+    },
+    {
+        "word": "Poo",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Waa!",
+        "imageUrl":  "",
+        "aType": "W",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Knee",
+        "imageUrl":  "",
+        "aType": "K",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Toy",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Pie",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Wee!",
+        "imageUrl":  "",
+        "aType": "W",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Dough",
+        "imageUrl":  "",
+        "aType": "D",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Bow (item)",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Bow (action",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Boy",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Ma",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Baa",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Bay",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Me",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Two",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Day",
+        "imageUrl":  "",
+        "aType": "D",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "New",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "No",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Bee",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Pea",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Tea",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Neigh",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Whoa",
+        "imageUrl":  "",
+        "aType": "W",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Tie",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Toe",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Bow",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Pay",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Paw",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "CV",
+        "mastery": false
+    },
+    {
+        "word": "Eat",
+        "imageUrl":  "",
+        "aType": "E",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Eight",
+        "imageUrl":  "",
+        "aType": "E",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Ed",
+        "imageUrl":  "",
+        "aType": "E",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Out (ow+t or ah+t)",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Up",
+        "imageUrl":  "",
+        "aType": "U",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "On",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Arm (ah+mm)",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "M (eh+mm)",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Ab",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Ape",
+        "imageUrl":  "",
+        "aType": "A",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Oat",
+        "imageUrl":  "",
+        "aType": "O",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "In",
+        "imageUrl":  "",
+        "aType": "I",
+        "cType": "VC",
+        "mastery": false
+    },
+    {
+        "word": "Moo Moo (or mama)",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Water (wawa)",
+        "imageUrl":  "",
+        "aType": "W",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Boo boo (or baba)",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Peep Peep (or papa)",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Mama",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Bubble (or baba)",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Woof Woof (or wawa)",
+        "imageUrl":  "",
+        "aType": "W",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Cookie (kaka or tata)",
+        "imageUrl":  "",
+        "aType": "C",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Dada",
+        "imageUrl":  "",
+        "aType": "D",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Papa",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Baa baa (baba)",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Beeo beeo (or bab)",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Neigh neigh",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Baby (or baba)",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Poo poo (or papa)",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Bye bye",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Night night (or nana)",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Turtle (tata)",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Tweet tweet (tee tee or tata)",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "No no",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "CVCV",
+        "mastery": false
+    },
+    {
+        "word": "Poodle",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Poodle",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Tummy",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Mini",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Winner",
+        "imageUrl":  "",
+        "aType": "W",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Pebble",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Water",
+        "imageUrl":  "",
+        "aType": "W",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Medal",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Tiny",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Puma",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Penny",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Tuba",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Pony",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Honey",
+        "imageUrl":  "",
+        "aType": "H",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Dirty",
+        "imageUrl":  "",
+        "aType": "D",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Hippo",
+        "imageUrl":  "",
+        "aType": "H",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Puddle",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Noodle",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Tuna",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Petal",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Needle",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Money",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Buddy",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Beetle",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Table",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Bunny",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Hammer",
+        "imageUrl":  "",
+        "aType": "H",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Bottle",
+        "imageUrl":  "",
+        "aType": "B",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Muddy",
+        "imageUrl":  "",
+        "aType": "M",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Potty",
+        "imageUrl":  "",
+        "aType": "P",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Dinner",
+        "imageUrl":  "",
+        "aType": "D",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Naughty",
+        "imageUrl":  "",
+        "aType": "N",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    },
+    {
+        "word": "Teddy",
+        "imageUrl":  "",
+        "aType": "T",
+        "cType": "C1V1C2V2",
+        "mastery": false
+    }
+]}

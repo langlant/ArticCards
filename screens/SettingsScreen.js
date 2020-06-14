@@ -43,7 +43,7 @@ const alphaType = [
     {aType: 'Z', addAlpha: true}
 ]
 
-const SettingsScreen = ({navigation}) =>{
+const SettingsScreen = ({route, navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
         //Both of which will be using flatlists preferably side by side
         //A card will only be counted if it meets both values being marked true (category and alpha)
@@ -75,6 +75,19 @@ const SettingsScreen = ({navigation}) =>{
             />
         )
     }
+
+    useEffect(() => {
+        try {
+          initArticDB();
+        } catch (err) {
+          console.log(err);
+        }
+        setupArticListener((items) => {
+          setArticType(items);
+          setAlphaType(items);
+        });
+      }, []);
+
     return(
         <View>
             <Text>Settings</Text>

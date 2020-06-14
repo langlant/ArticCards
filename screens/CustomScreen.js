@@ -35,7 +35,7 @@ const CustomScreen = ({navigation}) =>{
             />        
             <Input
                 //style={styles.input}
-                placeholder="Enter word"
+                placeholder="Enter word or phrase"
                 //value={state.lon2}
                 autoCorrect={false}
                 //errorStyle={styles.inputError}
