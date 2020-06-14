@@ -4,7 +4,7 @@ import { StyleSheet, Text, Keyboard, CheckBox } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { route, navigation } from "@react-navigation/native";
 import { FlatList } from "react-native-gesture-handler";
-import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
+import { storeArtic, setupArticListener, initArticDB, updateArtic } from '../helpers/fb-settings';
 
 const articType = [
     {arType: 'CV', addCV: true},
@@ -58,8 +58,7 @@ const SettingsScreen = ({route, navigation}) =>{
                 title={item.cType}
                 checked={item.addCV}
                 onPress={() => {
-                    let newArr = [...articType];
-                    newArr[index] = {...item, addCV: !item.addCV}
+                    updateArtic({...item, addCV: !item.addCV});
                 }}
             />
         )
@@ -72,8 +71,7 @@ const SettingsScreen = ({route, navigation}) =>{
                 title={item.aType}
                 checked={item.addAlpha}
                 onPress={() => {
-                    let newArr = [...articType];
-                    newArr[index] = {...item, addCV: !item.addCV}
+                    updateArtic({...item, aType: !item.addAlpha});
                 }}
             />
         )
@@ -105,7 +103,7 @@ const SettingsScreen = ({route, navigation}) =>{
             <Text style={styles.textmenu}>Artic Type</Text>
             <Text style={styles.textsubmenu}>Select what words to include based on their cononants and vowels</Text>
             <FlatList  
-                keyExtractor={(item) => item.alType}
+                keyExtractor={(item) => item.arType}
                 data={articType}
                 renderItem={renderCVType}
             />
@@ -121,6 +119,7 @@ const SettingsScreen = ({route, navigation}) =>{
 
 }
 
+
 const styles = StyleSheet.create({
     container: {
       padding: 10,
@@ -129,12 +128,51 @@ const styles = StyleSheet.create({
     },
     textmenu: {
       textAlign: 'center',
-      fontSize: 20
+      fontSize: 30
     },
     textsubmenu:{
       textAlign: 'center',
-      fontSize: 5
+      fontSize: 15
     },
-})
+    headerButton: {
+      color: '#fff',
+      fontWeight: 'bold',
+      margin: 10,
+    },
+    buttons: {
+      padding: 10,
+    },
+    inputError: {
+      color: 'red',
+    },
+    input: {
+      padding: 10,
+    },
+    resultsGrid: {
+      borderColor: '#000',
+      borderWidth: 1,
+    },
+    resultsRow: {
+      flexDirection: 'row',
+      borderColor: '#000',
+      borderBottomWidth: 1,
+    },
+    resultsLabelContainer: {
+      borderRightWidth: 1,
+      borderRightColor: '#000',
+      flex: 1,
+    },
+    resultsLabelText: {
+      fontWeight: 'bold',
+      fontSize: 20,
+      padding: 10,
+    },
+    resultsValueText: {
+      fontWeight: 'bold',
+      fontSize: 20,
+      flex: 1,
+      padding: 10,
+    },
+  });
 
 export default SettingsScreen;

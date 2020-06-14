@@ -21,7 +21,7 @@ const CustomScreen = ({route, navigation}) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
     //add check box solution for selection of word type (maybe bubbles, ask about this)
 
-        const [articCard, setCard] = useState({
+    const [articCard, setCard] = useState({
         word: '',
         imageUrl: '',
         aType:'',

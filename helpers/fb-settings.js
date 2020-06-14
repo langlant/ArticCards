@@ -10,6 +10,12 @@ export function storeArtic(item) {
   firebase.database().ref('articCards/').push(item);
 }
 
+export function updateArtic(item){
+  const key = item.id;
+  delete item.id;
+  firebase.database().ref(`articCards/${key}`).set(item);
+}
+
 export function setupArticListener(updateFunc) {
   firebase
     .database()
