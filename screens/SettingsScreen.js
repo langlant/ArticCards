@@ -1,6 +1,6 @@
-import React, { useState, usKeyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
+import React, { StyleSheet, useState, useKeyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
 import { Button, Input, useEffect } from "react";
-import { StyleSheet, Text, Keyboard, CheckBox } from "react-native-elements";
+import { Text, Keyboard, CheckBox } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { route, navigation } from "@react-navigation/native";
 import { FlatList } from "react-native-gesture-handler";

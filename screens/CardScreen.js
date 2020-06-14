@@ -22,7 +22,7 @@ const CardScreen = ({navigation}) =>{
     return(
         <View>
             <Text>Cards</Text>
-            <View style={styles.row}>
+            <View>
                 <Button
                     title='Next'
                 />

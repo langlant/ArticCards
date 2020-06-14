@@ -1,5 +1,5 @@
 import React, { useState, useRef,   useEffect } from "react";
-import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
+import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback, Image } from "react-native";
 import { Button, Input, Card } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { FlatList } from "react-native-gesture-handler";
@@ -47,6 +47,8 @@ const HomeScreen = ({navigation}) => {
                 <View style={styles.container}>
                     <Text style={styles.textmenu}>Welcome to Artic Cards</Text>
                     <Text style={styles.textsubmenu}>Press Start to Begin!</Text>
+                    <Image source={require('../assets/5-snowflake-png-image.png')}
+                      style={{width: 300, height: 300, alignSelf: 'center'}}/>
                     <Button
                     title="Start"
                     style={styles.buttons}
@@ -72,6 +74,7 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#E8EAF6',
     flex: 1,
+    justifyContent: 'center'
   },
   textmenu: {
     textAlign: 'center',
