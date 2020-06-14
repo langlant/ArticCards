@@ -43,28 +43,27 @@ const HomeScreen = ({navigation}) => {
       });
 
     return(
-        <View>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-                <View>
-                    <Text>Welcome to Artic Cards</Text>
-                    <Text>Press Start to Begin!</Text>
+                <View style={styles.container}>
+                    <Text style={styles.textmenu}>Welcome to Artic Cards</Text>
+                    <Text style={styles.textsubmenu}>Press Start to Begin!</Text>
                     <Button
                     title="Start"
+                    style={styles.buttons}
                     onPress={() => navigation.navigate('Cards')}
                     />
                     <Button
-                    titel="Progress"
-                    style={styles.padding}
+                    title="Progress"
+                    style={styles.buttons}
                     onPress={() => navigation.navigate('Progress')}
                     />
                     <Button
                     title="Customize"
-                    style={styles.padding}
+                    style={styles.buttons}
                     onPress={() => navigation.navigate('Customize')}
                     />
                 </View>
             </TouchableWithoutFeedback>
-        </View>
     );
 };
 
@@ -73,6 +72,14 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#E8EAF6',
     flex: 1,
+  },
+  textmenu: {
+    textAlign: 'center',
+    fontSize: 30
+  },
+  textsubmenu:{
+    textAlign: 'center',
+    fontSize: 15
   },
   headerButton: {
     color: '#fff',
