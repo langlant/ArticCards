@@ -1,11 +1,11 @@
 import React, { useState, usKeyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
-import { Button, Input, CaeRef,   useEffect } from "react";
-import { StyleSheet, Text, rd, CheckBox } from "react-native-elements";
+import { Button, Input, useEffect } from "react";
+import { StyleSheet, Text, Keyboard, CheckBox } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { FlatList } from "react-native-gesture-handler";
 import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
 
-const [articType, setArticType] = useState([
+const articType = [
     {arType: 'CV', addCV: true},
     {arType: 'VC', addCV: true},
     {arType: 'VV', addCV: true},
@@ -13,9 +13,9 @@ const [articType, setArticType] = useState([
     {arType: 'CVCV', addCV: true},
     {arType: 'C1V1C1V2', addCV: true},
     {arType: 'C1V1C2V2', addCV: true},
-]);
+];
 
-const [alphaType, setAlphaType] = useState([
+const alphaType = [
     {alType: 'A', addAlpha: true},
     {alType: 'B', addAlpha: true},
     {alType: 'C', addAlpha: true},
@@ -42,14 +42,16 @@ const [alphaType, setAlphaType] = useState([
     {alType: 'X', addAlpha: true},
     {alType: 'Y', addAlpha: true},
     {alType: 'Z', addAlpha: true}
-]);
+];
 
 const SettingsScreen = ({route, navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
         //Both of which will be using flatlists preferably side by side
         //A card will only be counted if it meets both values being marked true (category and alpha)
+
     
     const renderCVType = ({index, item}) =>{
+        
         return(
             <CheckBox
                 title={item.cType}
@@ -63,6 +65,7 @@ const SettingsScreen = ({route, navigation}) =>{
     }
 
     const renderAlphaType = ({index, item}) =>{
+        
         return(
             <CheckBox
                 title={item.aType}
@@ -75,6 +78,10 @@ const SettingsScreen = ({route, navigation}) =>{
         )
     }
 
+    function buildDeck() {
+        //if a card's  (aType == alType && cType == arType) && (addCV == true && addAlpha == true)
+        for 
+    }
     return(
         <View>
             <Text>Settings</Text>
@@ -89,7 +96,7 @@ const SettingsScreen = ({route, navigation}) =>{
                 renderItem={renderAlphaType}
             />
         </View>
-        )
+    )
 
 }
 

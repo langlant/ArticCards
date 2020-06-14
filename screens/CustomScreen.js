@@ -20,7 +20,8 @@ const articType = [
 const CustomScreen = ({route, navigation}) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
     //add check box solution for selection of word type (maybe bubbles, ask about this)
-    const [articCard, setCard] = useState({
+
+        const [articCard, setCard] = useState({
         word: '',
         imageUrl: '',
         aType:'',
@@ -57,13 +58,13 @@ const CustomScreen = ({route, navigation}) =>{
             <Text>Please enter the information of your custom card!</Text>
             <Input
                 placeholder="Enter valid image url"
-                value={state.imageUrl}
+                value={artiCard.imageUrl}
                 autoCorrect={false}
                 onChangeText={(val) => updateStateObject({ imageUrl: val })}
             />        
             <Input
                 placeholder="Enter word or phrase"
-                value={state.word}
+                value={artiCard.word}
                 autoCorrect={false}
                 onChangeText={(val) => 
                     updateStateObject({ word: val, aType: val.charAt(0).toUpperCase(), mastery: false})
