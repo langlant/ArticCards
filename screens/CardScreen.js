@@ -13,13 +13,13 @@ const CardScreen = ({navigation}) =>{
             <Text>Cards</Text>
             <Button
                 title="Next"
-                style={styles.padding}
+                //style={styles.padding}
                 //onPress={() => }
             />
             <Button
                 title="Previous"
-                style={styles.padding}
-                    //onPress={() => navigation.navigate('Customize')}
+                //style={styles.padding}
+                //onPress={() => navigation.navigate('Customize')}
             />
         </View>
     )
