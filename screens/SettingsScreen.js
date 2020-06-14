@@ -128,51 +128,12 @@ const styles = StyleSheet.create({
     },
     textmenu: {
       textAlign: 'center',
-      fontSize: 30
+      fontSize: 20
     },
     textsubmenu:{
       textAlign: 'center',
-      fontSize: 15
+      fontSize: 5
     },
-    headerButton: {
-      color: '#fff',
-      fontWeight: 'bold',
-      margin: 10,
-    },
-    buttons: {
-      padding: 10,
-    },
-    inputError: {
-      color: 'red',
-    },
-    input: {
-      padding: 10,
-    },
-    resultsGrid: {
-      borderColor: '#000',
-      borderWidth: 1,
-    },
-    resultsRow: {
-      flexDirection: 'row',
-      borderColor: '#000',
-      borderBottomWidth: 1,
-    },
-    resultsLabelContainer: {
-      borderRightWidth: 1,
-      borderRightColor: '#000',
-      flex: 1,
-    },
-    resultsLabelText: {
-      fontWeight: 'bold',
-      fontSize: 20,
-      padding: 10,
-    },
-    resultsValueText: {
-      fontWeight: 'bold',
-      fontSize: 20,
-      flex: 1,
-      padding: 10,
-    },
-  });
+});
 
 export default SettingsScreen;
