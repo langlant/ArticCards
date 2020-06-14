@@ -22,7 +22,14 @@ const CardScreen = ({navigation}) =>{
     return(
         <View>
             <Text>Cards</Text>
-            <View>
+            <Card
+                title={item.word}  
+                image={{imageUrl: item.imageUrl}}                  
+            >
+                <Text>{item.cType}</Text>
+            </Card>
+
+            <View style={styles.row}>
                 <Button
                     title='Next'
                 />

@@ -50,7 +50,26 @@ const SettingsScreen = ({route, navigation}) =>{
         //Both of which will be using flatlists preferably side by side
         //A card will only be counted if it meets both values being marked true (category and alpha)
 
-    
+    navigation.setOptions({
+        headerRight: () => (
+            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+            <Text style={styles.headerButton}> Cancel </Text>
+            </TouchableOpacity>
+        ),
+        headerLeft: () => (
+            <TouchableOpacity
+            onPress={() => {
+                // navigate back with new settings.
+                navigation.navigate('Home', {
+                    
+                });
+            }}
+            >
+            <Text style={styles.headerButton}> Save </Text>
+            </TouchableOpacity>
+        ),
+    });    
+
     const renderCVType = ({index, item}) =>{
         
         return(
