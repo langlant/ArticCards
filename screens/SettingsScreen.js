@@ -50,7 +50,21 @@ const SettingsScreen = ({navigation}) =>{
     const [card, setCard] = ([]);
 
     
-    const renderCardType = ({index, item}) =>{
+    const renderCVType = ({index, item}) =>{
+        return(
+            <CheckBox
+                title={item.cType}
+                checked={item.addCV}
+                onPress={() => {
+                    let newArr = [...articType];
+                    newArr[index] = {...item, addCV: !item.addCV}
+                    setCard(newArr);
+                }}
+            />
+        )
+    }
+
+    const renderAlphaType = ({index, item}) =>{
         return(
             <CheckBox
                 title={item.cType}
@@ -68,8 +82,13 @@ const SettingsScreen = ({navigation}) =>{
             <Text>Settings</Text>
             <FlatList  
                 keyExtractor={(item) => item.cType}
-                data={cardType}
-                renderItem={renderCardType}
+                data={articType}
+                renderItem={renderCVType}
+                />
+                <FlatList  
+                keyExtractor={(item) => item.aType}
+                data={alphaType}
+                renderItem={renderAlphaType}
                 />
         </View>
         )
