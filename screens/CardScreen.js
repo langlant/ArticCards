@@ -4,6 +4,10 @@ import { Button, Input, Card, Checkbox } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { FlatList } from "react-native-gesture-handler";
 
+//general formatting and importing of the deck. Probably put shuffle function here with imported array
+//Next and previous buttons should bascially refresh page and give next or previous card
+//mastery probably will require setupArticListener (this needs clarification though)
+
 const CardScreen = ({navigation}) =>{
 
     const renderMastery = ({index, item}) =>{

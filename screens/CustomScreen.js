@@ -4,6 +4,7 @@ import { Button, Input, Card } from "react-native-elements";
 import { Dropdown } from "react-native-material-dropdown";
 import { route, navigation } from "@react-navigation/native";
 import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
+//Cannot navigate to this page, not sure why
 
 const articType = [
     {cType: 'CV'},

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, Linking } from "react-native";
-
+//This page is complete other than some styling
 const AboutScreen = ({navigation}) =>{
     
     return(

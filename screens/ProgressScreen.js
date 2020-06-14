@@ -14,6 +14,8 @@ const articType = [
     {arType: 'C1V1C2V2'},
 ];
 
+//Formatting of this flat list and adding percentages completed of each category based on mastery
+
 const ProgressScreen = ({navigation}) =>{
     //display mastered cards, possibly in the future add category mastery
     // each category is marked numerator/denominator and converted to percentage rounded to xx.x%

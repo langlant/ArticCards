@@ -6,6 +6,8 @@ import { route, navigation } from "@react-navigation/native";
 import { FlatList } from "react-native-gesture-handler";
 import { storeArtic, setupArticListener, initArticDB, updateArtic } from '../helpers/fb-settings';
 
+//this is broken some how can't figure out why.
+
 const articType = [
     {arType: 'CV', addCV: true},
     {arType: 'VC', addCV: true},
