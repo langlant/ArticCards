@@ -1,6 +1,6 @@
 import React, { useState, useRef,   useEffect } from "react";
 import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
-import { Button, Input, Card } from "react-native-elements";
+import { Button, Input, Card, Checkbox } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { FlatList } from "react-native-gesture-handler";
 
@@ -8,6 +8,20 @@ const CardScreen = ({navigation}) =>{
     //Two buttons underneath a card that displays a card with a picture and description.
     //Previous, Next
     //Add check box to mark mastery
+
+    const renderMastery = ({index, item}) =>{
+        return(
+            <CheckBox
+                title={'Mastered?'}
+                checked={!this.state.checked}
+                onPress={() => {
+                    //let newArr = [...articType];
+                    //newArr[index] = {...item, addCV: !item.addCV}
+                }}
+            />
+        )
+    }
+
     return(
         <View>
             <Text>Cards</Text>
@@ -16,6 +30,7 @@ const CardScreen = ({navigation}) =>{
                 //style={styles.padding}
                 //onPress={() => }
             />
+            renderItem{renderMastery}
             <Button
                 title="Previous"
                 //style={styles.padding}

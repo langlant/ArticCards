@@ -1,54 +1,53 @@
-import React, { useState, useRef,   useEffect } from "react";
-import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
-import { Button, Input, Card, CheckBox } from "react-native-elements";
+import React, { useState, usKeyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
+import { Button, Input, CaeRef,   useEffect } from "react";
+import { StyleSheet, Text, rd, CheckBox } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { FlatList } from "react-native-gesture-handler";
+import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
 
-const articType = [
-    {cType: 'CV', addCV: true},
-    {cType: 'VC', addCV: true},
-    {cType: 'VV', addCV: true},
-    {cType: 'VCV', addCV: true},
-    {cType: 'CVCV', addCV: true},
-    {cType: 'C1V1C1V2', addCV: true},
-    {cType: 'C1V1C2V2', addCV: true},
-];
+const [articType, setArticType] = useState([
+    {arType: 'CV', addCV: true},
+    {arType: 'VC', addCV: true},
+    {arType: 'VV', addCV: true},
+    {arType: 'VCV', addCV: true},
+    {arType: 'CVCV', addCV: true},
+    {arType: 'C1V1C1V2', addCV: true},
+    {arType: 'C1V1C2V2', addCV: true},
+]);
 
-const alphaType = [
-    {aType: 'A', addAlpha: true},
-    {aType: 'B', addAlpha: true},
-    {aType: 'C', addAlpha: true},
-    {aType: 'D', addAlpha: true},
-    {aType: 'E', addAlpha: true},
-    {aType: 'F', addAlpha: true},
-    {aType: 'G', addAlpha: true},
-    {aType: 'H', addAlpha: true},
-    {aType: 'I', addAlpha: true},
-    {aType: 'J', addAlpha: true},
-    {aType: 'K', addAlpha: true},
-    {aType: 'L', addAlpha: true},
-    {aType: 'M', addAlpha: true},
-    {aType: 'N', addAlpha: true},
-    {aType: 'O', addAlpha: true},
-    {aType: 'P', addAlpha: true},
-    {aType: 'Q', addAlpha: true},
-    {aType: 'R', addAlpha: true},
-    {aType: 'S', addAlpha: true},
-    {aType: 'T', addAlpha: true},
-    {aType: 'U', addAlpha: true},
-    {aType: 'V', addAlpha: true},
-    {aType: 'W', addAlpha: true},
-    {aType: 'X', addAlpha: true},
-    {aType: 'Y', addAlpha: true},
-    {aType: 'Z', addAlpha: true}
-]
+const [alphaType, setAlphaType] = useState([
+    {alType: 'A', addAlpha: true},
+    {alType: 'B', addAlpha: true},
+    {alType: 'C', addAlpha: true},
+    {alType: 'D', addAlpha: true},
+    {alType: 'E', addAlpha: true},
+    {alType: 'F', addAlpha: true},
+    {alType: 'G', addAlpha: true},
+    {alType: 'H', addAlpha: true},
+    {alType: 'I', addAlpha: true},
+    {alType: 'J', addAlpha: true},
+    {alType: 'K', addAlpha: true},
+    {alType: 'L', addAlpha: true},
+    {alType: 'M', addAlpha: true},
+    {alType: 'N', addAlpha: true},
+    {alType: 'O', addAlpha: true},
+    {alType: 'P', addAlpha: true},
+    {alType: 'Q', addAlpha: true},
+    {alType: 'R', addAlpha: true},
+    {alType: 'S', addAlpha: true},
+    {alType: 'T', addAlpha: true},
+    {alType: 'U', addAlpha: true},
+    {alType: 'V', addAlpha: true},
+    {alType: 'W', addAlpha: true},
+    {alType: 'X', addAlpha: true},
+    {alType: 'Y', addAlpha: true},
+    {alType: 'Z', addAlpha: true}
+]);
 
 const SettingsScreen = ({route, navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
         //Both of which will be using flatlists preferably side by side
         //A card will only be counted if it meets both values being marked true (category and alpha)
-    const [card, setCard] = ([]);
-
     
     const renderCVType = ({index, item}) =>{
         return(
@@ -76,28 +75,16 @@ const SettingsScreen = ({route, navigation}) =>{
         )
     }
 
-    useEffect(() => {
-        try {
-          initArticDB();
-        } catch (err) {
-          console.log(err);
-        }
-        setupArticListener((items) => {
-          setArticType(items);
-          setAlphaType(items);
-        });
-      }, []);
-
     return(
         <View>
             <Text>Settings</Text>
             <FlatList  
-                keyExtractor={(item) => item.cType}
+                keyExtractor={(item) => item.alType}
                 data={articType}
                 renderItem={renderCVType}
             />
             <FlatList  
-                keyExtractor={(item) => item.aType}
+                keyExtractor={(item) => item.alType}
                 data={alphaType}
                 renderItem={renderAlphaType}
             />

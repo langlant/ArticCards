@@ -4,6 +4,8 @@ import { Button, Input, Card } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { Dropdown } from "react-native-material-dropdown";
 import { FlatList } from "react-native-gesture-handler";
+import { storeArtic } from "../helpers/fb-settings";
+import { route, navigation } from "@react-navigation/native";
 
 const articType = [
     {cType: 'CV'},
@@ -15,43 +17,76 @@ const articType = [
     {cType: 'C1V1C2V2'},
 ];
 
-const CustomScreen = ({navigation}) =>{
+const CustomScreen = ({route, navigation}) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
     //add check box solution for selection of word type (maybe bubbles, ask about this)
-    
-    const [selectArticType, setArticType] = useState('');
+    const [articCard, setCard] = useState({
+        word: '',
+        imageUrl: '',
+        aType:'',
+        cType: '',
+        mastery: false
+    })
+
+    const updateStateObject = (vals) => {
+        setState({
+          ...state,
+          ...vals,
+        });
+      };
+
+    useEffect(() => {
+        try {
+          initArticDB();
+        } catch (err) {
+          console.log(err);
+        }
+        setupArticListener((items) => {
+            setCard(items);
+        });
+      }, []);
+
+    useEffect(() => {
+        if(route.params?.articCard){
+            setCard({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
+        }
+    })
 
     return(
         <View>
             <Text>Please enter the information of your custom card!</Text>
             <Input
-                //style={styles.input}
                 placeholder="Enter valid image url"
-                //value={state.lon2}
+                value={state.imageUrl}
                 autoCorrect={false}
-                //errorStyle={styles.inputError}
-                //errorMessage={validate(state.lon2)}
-                //onChangeText={(val) => updateStateObject({ lon2: val })}
+                onChangeText={(val) => updateStateObject({ imageUrl: val })}
             />        
             <Input
-                //style={styles.input}
                 placeholder="Enter word or phrase"
-                //value={state.lon2}
+                value={state.word}
                 autoCorrect={false}
-                //errorStyle={styles.inputError}
-                //errorMessage={validate(state.lon2)}
-                //onChangeText={(val) => updateStateObject({ lon2: val })}
+                onChangeText={(val) => 
+                    updateStateObject({ word: val, aType: val.charAt(0).toUpperCase(), mastery: false})
+                }
             />
             <Dropdown
-                value={selectArticType}
-                onChangeText={(text) => setArticType(text)}
+                value={articType}
+                onChangeText={(text) => updateStateObject({cType: text})}
                 label="Artic Type"
                 data={articType}
             />
             <Button
                 title="Save"
-                //style={styles.padding}
-                //onPress={() => } this will save the cards to the database look at doCalculations for storage
+                onPress={() => 
+                    storeArtic({word, aType, cType, imageUrl, mastery})
+                } //this will save the cards to the database
+            />
+            <Button
+                title="Clear"
+                onPress={() =>
+                    updateStateObject({word: '', aType: '', cType: '', imageUrl: '', mastery: false}),
+                    navigation.navigate('Home')
+                }
             />
         </View>
     )
