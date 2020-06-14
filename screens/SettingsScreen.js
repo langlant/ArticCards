@@ -2,6 +2,7 @@ import React, { useState, usKeyboard, TouchableOpacity, View, TouchableWithoutFe
 import { Button, Input, useEffect } from "react";
 import { StyleSheet, Text, Keyboard, CheckBox } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
+import { route, navigation } from "@react-navigation/native";
 import { FlatList } from "react-native-gesture-handler";
 import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
 
@@ -78,12 +79,18 @@ const SettingsScreen = ({route, navigation}) =>{
         )
     }
 
+    /*
     function buildDeck() {
-        //if a card's  (aType == alType && cType == arType) && (addCV == true && addAlpha == true)
+        if a card's  (aType == alType && cType == arType) && (addCV == true && addAlpha == true)
         var deck = [];
 
-       for 
-    }
+       for ( var i = 0; i < firebase.length; i++){
+            if( (firebase[i].aType == alType && firebase[i].cType == arType) && (addCV == true && addAlpha == true)){
+                deck.push(firebase[i]);
+            }
+            return deck;
+       }
+    }*/
     return(
         <View>
             <Text>Settings</Text>

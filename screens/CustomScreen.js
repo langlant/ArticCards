@@ -4,8 +4,8 @@ import { Button, Input, Card } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { Dropdown } from "react-native-material-dropdown";
 import { FlatList } from "react-native-gesture-handler";
-import { storeArtic } from "../helpers/fb-settings";
 import { route, navigation } from "@react-navigation/native";
+import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
 
 const articType = [
     {cType: 'CV'},
@@ -37,15 +37,10 @@ const CustomScreen = ({route, navigation}) =>{
       };
 
     useEffect(() => {
-        try {
-          initArticDB();
-        } catch (err) {
-          console.log(err);
-        }
         setupArticListener((items) => {
             setCard(items);
         });
-      }, []);
+    })
 
     useEffect(() => {
         if(route.params?.articCard){
@@ -58,13 +53,13 @@ const CustomScreen = ({route, navigation}) =>{
             <Text>Please enter the information of your custom card!</Text>
             <Input
                 placeholder="Enter valid image url"
-                value={artiCard.imageUrl}
+                value={articCard.imageUrl}
                 autoCorrect={false}
                 onChangeText={(val) => updateStateObject({ imageUrl: val })}
             />        
             <Input
                 placeholder="Enter word or phrase"
-                value={artiCard.word}
+                value={articCard.word}
                 autoCorrect={false}
                 onChangeText={(val) => 
                     updateStateObject({ word: val, aType: val.charAt(0).toUpperCase(), mastery: false})

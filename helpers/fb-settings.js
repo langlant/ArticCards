@@ -7,13 +7,13 @@ export function initArticDB() {
 }
 
 export function storeArtic(item) {
-  firebase.database().ref('historyData/').push(item);
+  firebase.database().ref('articCards/').push(item);
 }
 
 export function setupArticListener(updateFunc) {
   firebase
     .database()
-    .ref('articData/')
+    .ref('articCards/')
     .on('value', (snapshot) => {
       if (snapshot?.val()) {
         const fbObject = snapshot.val();

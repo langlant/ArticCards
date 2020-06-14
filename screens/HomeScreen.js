@@ -3,10 +3,20 @@ import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFee
 import { Button, Input, Card } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 import { FlatList } from "react-native-gesture-handler";
+import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
 
 
 const HomeScreen = ({navigation}) => {
-    navigation.setOptions({
+  
+  useEffect(() => {
+    try {
+      initArticDB();
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+  
+  navigation.setOptions({
         headerRight: () => (
           <TouchableOpacity
             onPress={() =>
