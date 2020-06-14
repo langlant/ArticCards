@@ -61,7 +61,7 @@ const SettingsScreen = ({route, navigation}) =>{
             onPress={() => {
                 // navigate back with new settings.
                 navigation.navigate('Home', {
-                    
+                    //pass deck to CardScreen
                 });
             }}
             >

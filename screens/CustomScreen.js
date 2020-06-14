@@ -1,9 +1,7 @@
 import React, { useState, useRef,   useEffect } from "react";
 import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
 import { Button, Input, Card } from "react-native-elements";
-import { Feather } from "@expo/vector-icons";
 import { Dropdown } from "react-native-material-dropdown";
-import { FlatList } from "react-native-gesture-handler";
 import { route, navigation } from "@react-navigation/native";
 import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
 
