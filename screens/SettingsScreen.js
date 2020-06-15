@@ -1,11 +1,8 @@
-import React, { StyleSheet, useState, useKeyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
-import { Button, Input, useEffect } from "react";
-import { Text, Keyboard, CheckBox } from "react-native-elements";
-import { Feather } from "@expo/vector-icons";
-import { route, navigation } from "@react-navigation/native";
-import { FlatList } from "react-native-gesture-handler";
-import { storeArtic, setupArticListener, initArticDB, updateArtic } from '../helpers/fb-settings';
-
+import React from 'react';
+import {StyleSheet, TouchableOpacity, View} from "react-native";
+import {Text, CheckBox} from "react-native-elements";
+import {FlatList } from "react-native-gesture-handler";
+import {updateArtic} from '../helpers/fb-settings';
 //this is broken some how can't figure out why.
 
 const articType = [
