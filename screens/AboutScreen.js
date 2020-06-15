@@ -1,8 +1,20 @@
-import React from "react";
-import { StyleSheet, Text, View, Linking } from "react-native";
+import React, { useState, useRef,  useEffect } from "react";
+import { StyleSheet, Text, View, Linking} from "react-native";
+import {Button, Input} from "react-native-elements";
+import { route, navigation } from "@react-navigation/native";
 //This page is complete other than some styling
-const AboutScreen = ({navigation}) =>{
-    
+//Add find speech pathologist near you feature
+const AboutScreen = ({navigation, route}) =>{
+    const [address, setAddress] =useState({
+        addr: ''
+    });
+
+    useEffect(() => {
+        if(route.params?.address){
+            setAddress({address: state.addr})
+        }
+    }, [route.params?.articCard]);
+
     return(
         <View style={styles.container}>
             <Text style={styles.textmenu}>Disclaimer: </Text>
@@ -14,6 +26,20 @@ const AboutScreen = ({navigation}) =>{
             >
                 KidsHealth    
             </Text>
+            <Text style={styles.textsubmenu}>To locate a speech pathologist near you, place your address below and hit search!</Text>
+            <Input
+                placeholder="Enter your address: Street Address, City, State Zipcode, USA"
+                value={address.addr}
+                onChangeText={(val) => 
+                    setAddress({address: val})
+                }
+            />
+            <Button
+                title="Search"
+                onPress={() => {
+                    navigation.navigate('Maps')
+                }}
+            />
         </View>
     )
 }

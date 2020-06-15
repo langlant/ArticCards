@@ -45,7 +45,7 @@ const CustomScreen = ({route, navigation}) =>{
         if(route.params?.articCard){
             setCard({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
         }
-    })
+    }, [route.params?.articCard]);
 
     return(
         <View>

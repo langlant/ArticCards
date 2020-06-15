@@ -8,6 +8,7 @@ import AboutScreen from './screens/AboutScreen';
 import CustomScreen from './screens/CustomScreen';
 import CardScreen from './screens/CardScreen';
 import ProgressScreen from './screens/ProgressScreen';
+import MapScreen from './screens/MapScreen';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
         <Stack.Screen name="Customize" component={CustomScreen}/>
         <Stack.Screen name="Cards" component={CardScreen}/>
         <Stack.Screen name="Progress" component={ProgressScreen}/>
+        <Stack.Screen name="Maps" component={MapScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
