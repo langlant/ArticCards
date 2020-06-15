@@ -2,14 +2,14 @@ import axios from 'axios'
 import {gkey} from './gkey';
 
 const gmapServer = axios.create({
-    baseURL:'http://maps.googleapis.com/maps/'
+    baseURL:'http://maps.googleapis.com/'
 
 })
 
-/*
-export const getWeather = async (item, callback) => {
-    const response = await WeatherServer.get(
-        `?lat=${item.lat}&lon=${item.lon}&appid=${WKey}&units=imperial`
+
+export const getMap = async (item, callback) => {
+    const response = await gmapServer.get(
+        `maps/api/geocode/json?address=${defaultAddress}&key=${gkey}`
     ); 
     callback(response.data)
-};*/
+};

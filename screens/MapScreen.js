@@ -7,12 +7,14 @@ import {
     InfoWindow
   } from "react-google-maps";
 import {gkey} from '../api/gkey'
-
+import { route, navigation } from "@react-navigation/native";
+import {getMap} from '../api/gmap';
 
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
-const MapScreen = ({navigation}) =>{
+const MapScreen = ({navigation, route}) =>{
+    
     const {defaultAddress} = route.params;
    /* function Map(){
         return <GoogleMap defaultZoom={10} defaultCenter={{ lat: 42.807091, lng: -86.018860}}/>
@@ -20,7 +22,7 @@ const MapScreen = ({navigation}) =>{
     return(
         <div style={{width: '100vw', height: '100vh'}}>
             <WrappedMap 
-        googleMapURL={`https://maps.googleapis.com/maps/api/geocode/json?address=${defaultAddress}&key=${gkey}`}
+        googleMapURL={getMap(defaultAddress)}
                 loadingElement={<div style={{ height: `100%`}}/> }
                 containerElement={<div style={{ height: `100%` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
