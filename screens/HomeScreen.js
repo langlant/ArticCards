@@ -6,13 +6,17 @@ import { initArticDB } from '../helpers/fb-settings';
 
 
 const HomeScreen = ({navigation}) => {
-  
+  const [ initialDeck, setInitialDeck] = useState([]);
+
   useEffect(() => {
     try {
       initArticDB();
     } catch (err) {
       console.log(err);
     }
+    setupArticListener((items) => {
+      setInitialDeck(items);
+    });
   }, []);
   
   navigation.setOptions({
@@ -42,29 +46,30 @@ const HomeScreen = ({navigation}) => {
       });
 
     return(
-            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-                <View style={styles.container}>
-                    <Text style={styles.textmenu}>Welcome to Artic Cards</Text>
-                    <Text style={styles.textsubmenu}>Press Start to Begin!</Text>
-                    <Image source={require('../assets/5-snowflake-png-image.png')}
-                      style={{width: 300, height: 300, alignSelf: 'center'}}/>
-                    <Button
-                    title="Start"
-                    style={styles.buttons}
-                    onPress={() => navigation.navigate('Cards')}
-                    />
-                    <Button
-                    title="Progress"
-                    style={styles.buttons}
-                    onPress={() => navigation.navigate('Progress')}
-                    />
-                    <Button
-                    title="Customize"
-                    style={styles.buttons}
-                    onPress={() => navigation.navigate('Customize')}
-                    />
-                </View>
-            </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <View style={styles.container}>
+          <Text style={styles.textmenu}>Welcome to Artic Cards</Text>
+          <Text style={styles.textsubmenu}>Press Start to Begin!</Text>
+          <Image source={require('../assets/5-snowflake-png-image.png')}
+            style={{width: 300, height: 300, alignSelf: 'center'}}/>
+          <Button
+            title="Start"
+            style={styles.buttons}
+            onPress={() => navigation.navigate('Cards'),
+            {passDeck: initialDeck}}
+          />
+          <Button
+            title="Progress"
+            style={styles.buttons}
+            onPress={() => navigation.navigate('Progress')}
+          />
+          <Button
+            title="Customize"
+            style={styles.buttons}
+            onPress={() => navigation.navigate('Customize')}
+          />
+        </View>
+      </TouchableWithoutFeedback>
     );
 };
 

@@ -10,8 +10,8 @@ import { Button, Card } from "react-native-elements";
 //Deck will be imported here and the information from SettingScreen will be imported here as well
 const CardScreen = ({navigation}) =>{
     
-    const { currentSettings } = route.params;
-
+    const { currentSettings, passDeck } = route.params;
+    
     const renderMastery = ({index, item}) =>{
         return(
             <CheckBox

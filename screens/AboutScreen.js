@@ -36,7 +36,8 @@ const AboutScreen = ({navigation, route}) =>{
             <Button
                 title="Search"
                 onPress={() => {
-                    navigation.navigate('Maps')
+                    navigation.navigate('Maps'),
+                    {address}
                 }}
             />
         </View>

@@ -60,7 +60,7 @@ const SettingsScreen = ({route, navigation}) =>{
             onPress={() => {
                 // navigate back with new settings.
                 navigation.navigate('Home', {
-                    currentSetting
+                    currentSetting: articType
                 });
             }}
             >

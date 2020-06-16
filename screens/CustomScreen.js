@@ -35,11 +35,6 @@ const CustomScreen = ({ route, navigation }) =>{
         });
       };
 
-    useEffect(() => {
-        setupArticListener((items) => {
-            setCard(items);
-        });
-    })
 
     useEffect(() => {
         if(route.params?.articCard){
