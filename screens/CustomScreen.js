@@ -7,7 +7,7 @@ import { storeArtic } from '../helpers/fb-settings';
 
 
 
-const CustomScreen = ({ navigation }) =>{
+const CustomScreen = ({ route, navigation }) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
     //add check box solution for selection of word type (maybe bubbles, ask about this)
     const articDrop = [
@@ -28,7 +28,6 @@ const CustomScreen = ({ navigation }) =>{
         mastery: false
     })
 
-
     return(
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <View>
@@ -48,7 +47,7 @@ const CustomScreen = ({ navigation }) =>{
                     }
                 />
                 <Dropdown
-                    value={articCard}
+                    value={articCard.cType}
                     onChangeText={(text) => setCard({cType: text})}
                     label="Artic Type"
                     data={articDrop}
@@ -62,10 +61,10 @@ const CustomScreen = ({ navigation }) =>{
                 />
                 <Button
                     title="Clear"
-                    onPress={() =>
-                        setCard({word: '', aType: '', cType: '', imageUrl: '', mastery: false}),
-                        navigation.navigate('Home')
-                    }
+                    onPress={() => {
+                        setCard({word: '', aType: '', cType: '', imageUrl: '', mastery: false});
+                        navigation.navigate('Home');
+                    }}
                 />
             </View>
         </TouchableWithoutFeedback>

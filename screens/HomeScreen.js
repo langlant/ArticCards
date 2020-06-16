@@ -65,8 +65,8 @@ const HomeScreen = ({route, navigation}) => {
           <Button
             title="Start"
             style={styles.buttons}
-            onPress={() => navigation.navigate('Cards'),
-            {passDeck: initialDeck}}
+            onPress={() => navigation.navigate('Cards',
+            {passDeck: initialDeck})}
           />
           <Button
             title="Progress"

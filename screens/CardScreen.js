@@ -8,7 +8,7 @@ import { updateArtic } from "../helpers/fb-settings";
 //Next and previous buttons should bascially refresh page and give next or previous card
 //mastery probably will require setupArticListener (this needs clarification though)
 //Deck will be imported here and the information from SettingScreen will be imported here as well
-const CardScreen = ({navigation}) =>{
+const CardScreen = ({route, navigation}) =>{
     
     const { currentSettings, passDeck } = route.params;
     
