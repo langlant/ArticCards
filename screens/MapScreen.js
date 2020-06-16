@@ -24,7 +24,7 @@ const MapScreen = ({navigation, route}) =>{
     return(
         <div style={{width: '100vw', height: '100vh'}}>
             <WrappedMap 
-                googleMapURL={getMap()}
+                googleMapURL={'https://maps.googleapis.com/maps/api/place/textsearch/json?query=speech+pathologists&key=AIzaSyBDFsX8IckSELVW9V3FbelxibXEyRATyPY'}
                 loadingElement={<div style={{ height: `100%`}}/> }
                 containerElement={<div style={{ height: `100%` }} />}
                 mapElement={<div style={{ height: `100%` }} />}

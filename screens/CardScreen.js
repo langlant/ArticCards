@@ -25,19 +25,20 @@ const CardScreen = ({navigation}) =>{
         )
     }
 
-    /*
+    
     function buildDeck() {
-        if a card's  (aType == alType && cType == arType) && (addCV == true && addAlpha == true)
         var deck = [];
-
-       for ( var i = 0; i < firebase.length; i++){
-            if( (firebase[i].cType == arType) && (addCV == true)){
-                deck.push(firebase[i]);
+       for ( var i = 0; i < passDeck.length; i++){
+            if( (passDeck[i].cType == arType) && (addCV == true)){
+                deck.push(passDeck[i]);
             }
             return deck;
        }
     }
     
+    buildDeck();
+    
+    /*
     function shuffle(o) {
 	    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 	    return o;

@@ -30,8 +30,7 @@ const AboutScreen = ({navigation, route}) =>{
             <Button
                 title="Search"
                 onPress={() => {
-                    navigation.navigate('Maps'),
-                    {address}
+                    navigation.navigate('Maps')
                 }}
             />
         </View>
@@ -60,12 +59,13 @@ const styles = StyleSheet.create({
 })
 
 export default AboutScreen;
+
 /*
-<Input
-placeholder="Enter your address: Street Address, City, State Zipcode, USA"
-value={address.addr}
-onChangeText={(val) => 
-    setAddress({address: val})
-}
-/>
-*/
+            <Input
+                placeholder="Enter your address: Street Address, City, State Zipcode, USA"
+                value={address.addr}
+                onChangeText={(val) => 
+                    setAddress({address: val})
+                }
+            />
+            */
