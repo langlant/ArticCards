@@ -66,9 +66,6 @@ const CardScreen = ({navigation}) =>{
             <View style={styles.row}>
                 <Button
                     title='Next'
-                    onPress={
-
-                    }
                 />
                 renderItem{renderMastery}
                 <Button

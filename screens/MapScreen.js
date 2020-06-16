@@ -15,11 +15,11 @@ function initMap() {
     zoom: 8
   });
 }
-/*
-const WrappedMap = withScriptjs(withGoogleMap(Map));
+
+//const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 const MapScreen = ({navigation, route}) =>{
-
+/*
     return(
         <div style={{width: '100vw', height: '100vh'}}>
             <WrappedMap 
@@ -30,6 +30,7 @@ const MapScreen = ({navigation, route}) =>{
             />
         </div>
     )
+    */
 }
-*/
+
 export default MapScreen;
