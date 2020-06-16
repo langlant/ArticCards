@@ -28,13 +28,6 @@ const CustomScreen = ({ route, navigation }) =>{
         mastery: false
     })
 
-    const updateStateObject = (vals) => {
-        setCard({
-          ...state,
-          ...vals,
-        });
-      };
-
 
     return(
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
