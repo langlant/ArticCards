@@ -15,6 +15,7 @@ export function updateArtic(item){
   delete item.id;
   firebase.database().ref(`articCards/${key}`).set(item);
 }
+
 /*
 export function retrieveArtic(item){
   

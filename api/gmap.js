@@ -9,7 +9,7 @@ const gmapServer = axios.create({
 
 export const getMap = async (item, callback) => {
     const response = await gmapServer.get(
-        `maps/api/geocode/json?address=${defaultAddress}&key=${gkey}`
+        `https://maps.googleapis.com/maps/api/place/textsearch/json?query=speech+pathologists&key=${gkey}`
     ); 
     callback(response.data)
 };

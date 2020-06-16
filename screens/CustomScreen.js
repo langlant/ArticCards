@@ -81,7 +81,7 @@ const CustomScreen = ({ route, navigation }) =>{
                 <Button
                     title="Clear"
                     onPress={() =>
-                        //setCard({word: '', aType: '', cType: '', imageUrl: '', mastery: false}),
+                        setCard({word: '', aType: '', cType: '', imageUrl: '', mastery: false}),
                         navigation.navigate('Home')
                     }
                 />
