@@ -29,7 +29,7 @@ const MapScreen = ({navigation, route}) =>{
                 containerElement={<div style={{ height: `100%` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
             />
-            </div>
+        </div>
     )
 }
 

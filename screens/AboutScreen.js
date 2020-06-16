@@ -25,14 +25,8 @@ const AboutScreen = ({navigation, route}) =>{
             >
                 KidsHealth    
             </Text>
-            <Text style={styles.textsubmenu}>To locate a speech pathologist near you, place your address below and hit search!</Text>
-            <Input
-                placeholder="Enter your address: Street Address, City, State Zipcode, USA"
-                value={address.addr}
-                onChangeText={(val) => 
-                    setAddress({address: val})
-                }
-            />
+            <Text style={styles.textsubmenu}>To locate a speech pathologist near you, just hit search!</Text>
+
             <Button
                 title="Search"
                 onPress={() => {
@@ -66,3 +60,12 @@ const styles = StyleSheet.create({
 })
 
 export default AboutScreen;
+/*
+<Input
+placeholder="Enter your address: Street Address, City, State Zipcode, USA"
+value={address.addr}
+onChangeText={(val) => 
+    setAddress({address: val})
+}
+/>
+*/
