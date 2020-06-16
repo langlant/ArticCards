@@ -82,6 +82,7 @@ const SettingsScreen = ({route, navigation}) =>{
         )
     }
 
+    /*
     const renderAlphaType = ({index, item}) =>{
         
         return(
@@ -94,27 +95,17 @@ const SettingsScreen = ({route, navigation}) =>{
             />
         )
     }
+            //This code was originally in return but moved for commenting
+            //This portion complicates things unneccessarily
+            <Text style={styles.textmenu}>Alphabet Type</Text>
+            <Text style={styles.textsubmenu}> Select what words to include based on their starting letter</Text>
+            <FlatList  
+                keyExtractor={(item) => item.alType}
+                data={alphaType}
+                renderItem={renderAlphaType}
+            />
 
-    /*
-    function buildDeck() {
-        if a card's  (aType == alType && cType == arType) && (addCV == true && addAlpha == true)
-        var deck = [];
-
-       for ( var i = 0; i < firebase.length; i++){
-            if( (firebase[i].aType == alType && firebase[i].cType == arType) && (addCV == true && addAlpha == true)){
-                deck.push(firebase[i]);
-            }
-            return deck;
-       }
-    }
-    
-    function shuffle(o) {
-	    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-	    return o;
-    };
     */
-
-
 
     return(
         <View style={styles.container}>
@@ -125,13 +116,7 @@ const SettingsScreen = ({route, navigation}) =>{
                 data={articType}
                 renderItem={renderCVType}
             />
-            <Text style={styles.textmenu}>Alphabet Type</Text>
-            <Text style={styles.textsubmenu}> Select what words to include based on their starting letter</Text>
-            <FlatList  
-                keyExtractor={(item) => item.alType}
-                data={alphaType}
-                renderItem={renderAlphaType}
-            />
+
         </View>
     )
 

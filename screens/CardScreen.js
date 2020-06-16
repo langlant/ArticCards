@@ -7,7 +7,7 @@ import { FlatList } from "react-native-gesture-handler";
 //general formatting and importing of the deck. Probably put shuffle function here with imported array
 //Next and previous buttons should bascially refresh page and give next or previous card
 //mastery probably will require setupArticListener (this needs clarification though)
-
+//Deck will be imported here and the information from SettingScreen will be imported here as well
 const CardScreen = ({navigation}) =>{
 
     const renderMastery = ({index, item}) =>{
@@ -22,6 +22,25 @@ const CardScreen = ({navigation}) =>{
             />
         )
     }
+
+    /*
+    function buildDeck() {
+        if a card's  (aType == alType && cType == arType) && (addCV == true && addAlpha == true)
+        var deck = [];
+
+       for ( var i = 0; i < firebase.length; i++){
+            if( (firebase[i].cType == arType) && (addCV == true)){
+                deck.push(firebase[i]);
+            }
+            return deck;
+       }
+    }
+    
+    function shuffle(o) {
+	    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	    return o;
+    };
+    */
 
     return(
         <View>
