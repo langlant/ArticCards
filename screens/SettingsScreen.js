@@ -73,7 +73,7 @@ const SettingsScreen = ({route, navigation}) =>{
         
         return(
             <CheckBox
-                title={item.cType}
+                title={item.arType}
                 checked={item.addCV}
                 onPress={() => {
                     updateArtic({...item, addCV: !item.addCV});
@@ -86,7 +86,7 @@ const SettingsScreen = ({route, navigation}) =>{
         
         return(
             <CheckBox
-                title={item.aType}
+                title={item.alType}
                 checked={item.addAlpha}
                 onPress={() => {
                     updateArtic({...item, aType: !item.addAlpha});
@@ -146,11 +146,11 @@ const styles = StyleSheet.create({
     },
     textmenu: {
       textAlign: 'center',
-      fontSize: 20
+      fontSize: 30
     },
     textsubmenu:{
       textAlign: 'center',
-      fontSize: 5
+      fontSize: 15
     },
 });
 

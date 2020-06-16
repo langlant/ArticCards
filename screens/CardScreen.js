@@ -16,8 +16,8 @@ const CardScreen = ({navigation}) =>{
                 title={'Mastered?'}
                 checked={!this.state.checked}
                 onPress={() => {
-                    //let newArr = [...articType];
-                    //newArr[index] = {...item, addCV: !item.addCV}
+                    let newArr = [...articType];
+                    newArr[index] = {...item, mastery: !item.mastery}
                 }}
             />
         )
