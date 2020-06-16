@@ -2,8 +2,7 @@ import React, { useState, useRef,   useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button, Card } from "react-native-elements";
 import { updateArtic } from "../helpers/fb-settings";
-
-
+//Cannot navigate to this page, not sure why
 
 //general formatting and importing of the deck. Probably put shuffle function here with imported array
 //Next and previous buttons should bascially refresh page and give next or previous card
@@ -13,6 +12,15 @@ const CardScreen = ({navigation}) =>{
     
     const { currentSettings, passDeck } = route.params;
     
+    const renderCard = ({index, item}) => {
+        <View>
+            <Card
+            title={item.word}
+            image={{uri: item.imageUrl}}>
+                <Text> {item.cType} </Text>
+            </Card>
+        </View>
+    }
     const renderMastery = ({index, item}) =>{
         return(
             <CheckBox
@@ -37,7 +45,7 @@ const CardScreen = ({navigation}) =>{
     }
     
     buildDeck();
-    
+
     /*
     function shuffle(o) {
 	    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -58,6 +66,9 @@ const CardScreen = ({navigation}) =>{
             <View style={styles.row}>
                 <Button
                     title='Next'
+                    onPress={
+
+                    }
                 />
                 renderItem{renderMastery}
                 <Button
