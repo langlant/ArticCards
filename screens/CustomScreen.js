@@ -5,20 +5,20 @@ import { Dropdown } from "react-native-material-dropdown";
 import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
 //Cannot navigate to this page, not sure why
 
-const articDrop = [
-    {adType: 'CV'},
-    {adType: 'VC'},
-    {adType: 'VV'},
-    {adType: 'VCV'},
-    {adType: 'CVCV'},
-    {adType: 'C1V1C1V2'},
-    {adType: 'C1V1C2V2'},
-];
 
-const CustomScreen = ({route, navigation}) =>{
+
+const CustomScreen = ({ route, navigation }) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
     //add check box solution for selection of word type (maybe bubbles, ask about this)
-
+    const articDrop = [
+        {value: 'CV'},
+        {value: 'VC'},
+        {value: 'VV'},
+        {value: 'VCV'},
+        {value: 'CVCV'},
+        {value: 'C1V1C1V2'},
+        {value: 'C1V1C2V2'},
+    ];
 
     const [articCard, setCard] = useState({
         word: '',
@@ -29,7 +29,7 @@ const CustomScreen = ({route, navigation}) =>{
     })
 
     const updateStateObject = (vals) => {
-        setState({
+        setCard({
           ...state,
           ...vals,
         });
@@ -55,32 +55,33 @@ const CustomScreen = ({route, navigation}) =>{
                     placeholder="Enter valid image url"
                     value={articCard.imageUrl}
                     autoCorrect={false}
-                    onChangeText={(val) => updateStateObject({ imageUrl: val })}
+                    onChangeText={(val) => setCard({ imageUrl: val })}
                 />        
                 <Input
                     placeholder="Enter word or phrase"
                     value={articCard.word}
                     autoCorrect={false}
                     onChangeText={(val) => 
-                        updateStateObject({ word: val, aType: val.charAt(0).toUpperCase(), mastery: false})
+                        setCard({ word: val, aType: val.charAt(0).toUpperCase(), mastery: false})
                     }
                 />
                 <Dropdown
-                    value={adType}
-                    onChangeText={(text) => updateStateObject({cType: text})}
+                    value={articCard}
+                    onChangeText={(text) => setCard({cType: text})}
                     label="Artic Type"
                     data={articDrop}
                 />
                 <Button
+                //this will save the cards to the database
                     title="Save"
                     onPress={() => 
-                        setCard({word, aType, cType, imageUrl, mastery})
-                    } //this will save the cards to the database
+                        storeArtic({word, aType, cType, imageUrl, mastery})
+                    } 
                 />
                 <Button
                     title="Clear"
                     onPress={() =>
-                        updateStateObject({word: '', aType: '', cType: '', imageUrl: '', mastery: false}),
+                        //setCard({word: '', aType: '', cType: '', imageUrl: '', mastery: false}),
                         navigation.navigate('Home')
                     }
                 />
