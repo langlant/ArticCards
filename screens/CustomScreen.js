@@ -5,19 +5,20 @@ import { Dropdown } from "react-native-material-dropdown";
 import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
 //Cannot navigate to this page, not sure why
 
-const articType = [
-    {cType: 'CV'},
-    {cType: 'VC'},
-    {cType: 'VV'},
-    {cType: 'VCV'},
-    {cType: 'CVCV'},
-    {cType: 'C1V1C1V2'},
-    {cType: 'C1V1C2V2'},
+const articDrop = [
+    {adType: 'CV'},
+    {adType: 'VC'},
+    {adType: 'VV'},
+    {adType: 'VCV'},
+    {adType: 'CVCV'},
+    {adType: 'C1V1C1V2'},
+    {adType: 'C1V1C2V2'},
 ];
 
 const CustomScreen = ({route, navigation}) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
     //add check box solution for selection of word type (maybe bubbles, ask about this)
+
 
     const [articCard, setCard] = useState({
         word: '',
@@ -65,15 +66,15 @@ const CustomScreen = ({route, navigation}) =>{
                     }
                 />
                 <Dropdown
-                    value={articType}
+                    value={adType}
                     onChangeText={(text) => updateStateObject({cType: text})}
                     label="Artic Type"
-                    data={articType}
+                    data={articDrop}
                 />
                 <Button
                     title="Save"
                     onPress={() => 
-                        storeArtic({word, aType, cType, imageUrl, mastery})
+                        setCard({word, aType, cType, imageUrl, mastery})
                     } //this will save the cards to the database
                 />
                 <Button

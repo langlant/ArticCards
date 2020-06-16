@@ -6,7 +6,7 @@ import {FlatList } from "react-native-gesture-handler";
 
 
 
-const alphaType = [
+/*const alphaType = [
     {alType: 'A', addAlpha: true},
     {alType: 'B', addAlpha: true},
     {alType: 'C', addAlpha: true},
@@ -33,7 +33,7 @@ const alphaType = [
     {alType: 'X', addAlpha: true},
     {alType: 'Y', addAlpha: true},
     {alType: 'Z', addAlpha: true}
-];
+];*/
 
 const SettingsScreen = ({route, navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
@@ -60,7 +60,7 @@ const SettingsScreen = ({route, navigation}) =>{
             onPress={() => {
                 // navigate back with new settings.
                 navigation.navigate('Home', {
-                    currentSetting: articType
+                    currentSetting
                 });
             }}
             >

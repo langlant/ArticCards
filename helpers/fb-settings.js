@@ -16,6 +16,10 @@ export function updateArtic(item){
   firebase.database().ref(`articCards/${key}`).set(item);
 }
 
+export function retrieveArtic(item){
+  
+}
+
 export function setupArticListener(updateFunc) {
   firebase
     .database()
