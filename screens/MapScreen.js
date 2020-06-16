@@ -12,14 +12,11 @@ import {getMap} from '../api/gmap';
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 const MapScreen = ({navigation, route}) =>{
-   // const {mapaddress} = route.params;
-   /* function Map(){
-        return <GoogleMap defaultZoom={10} defaultCenter={{ lat: 42.807091, lng: -86.018860}}/>
-    }*/
+
     return(
         <div style={{width: '100vw', height: '100vh'}}>
             <WrappedMap 
-        googleMapURL={getMap(mapaddress)}
+        googleMapURL={getMap()}
                 loadingElement={<div style={{ height: `100%`}}/> }
                 containerElement={<div style={{ height: `100%` }} />}
                 mapElement={<div style={{ height: `100%` }} />}

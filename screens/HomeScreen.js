@@ -2,10 +2,10 @@ import React, { useState, useRef,   useEffect } from "react";
 import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback, Image } from "react-native";
 import { Button} from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
-import { initArticDB } from '../helpers/fb-settings';
+import { initArticDB, setupArticListener } from '../helpers/fb-settings';
 
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({route, navigation}) => {
   const [ initialDeck, setInitialDeck] = useState([]);
 
   useEffect(() => {
@@ -18,6 +18,16 @@ const HomeScreen = ({navigation}) => {
       setInitialDeck(items);
     });
   }, []);
+
+  useEffect(() => {
+    if(route.params?.articType){
+      setArticType(route.params.articType);
+    }
+    if(route.params?.articCard){
+      setCard({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
+    }
+  }, [route.params?.articType, route.params?.articCard] );
+  
   
   navigation.setOptions({
         headerRight: () => (

@@ -1,8 +1,8 @@
-import React, { useState, useRef,   useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
-import { Button, Input, Card } from "react-native-elements";
+import { Button, Input } from "react-native-elements";
 import { Dropdown } from "react-native-material-dropdown";
-import { storeArtic, setupArticListener, initArticDB } from '../helpers/fb-settings';
+import { storeArtic } from '../helpers/fb-settings';
 //Cannot navigate to this page, not sure why
 
 
@@ -35,12 +35,6 @@ const CustomScreen = ({ route, navigation }) =>{
         });
       };
 
-
-    useEffect(() => {
-        if(route.params?.articCard){
-            setCard({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
-        }
-    }, [route.params?.articCard]);
 
     return(
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>

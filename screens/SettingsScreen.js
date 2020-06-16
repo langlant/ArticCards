@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {StyleSheet, TouchableOpacity, View} from "react-native";
 import {Text, CheckBox} from "react-native-elements";
 import {FlatList } from "react-native-gesture-handler";
@@ -39,16 +39,17 @@ const SettingsScreen = ({route, navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
         //Both of which will be using flatlists preferably side by side
         //A card will only be counted if it meets both values being marked true (category and alpha)
-        const [articType, setArticType] = useState([
-            {arType: 'CV', addCV: true},
-            {arType: 'VC', addCV: true},
-            {arType: 'VV', addCV: true},
-            {arType: 'VCV', addCV: true},
-            {arType: 'CVCV', addCV: true},
-            {arType: 'C1V1C1V2', addCV: true},
-            {arType: 'C1V1C2V2', addCV: true},
-        ]);
+    const [articType, setArticType] = useState([
+        {arType: 'CV', addCV: true},
+        {arType: 'VC', addCV: true},
+        {arType: 'VV', addCV: true},
+        {arType: 'VCV', addCV: true},
+        {arType: 'CVCV', addCV: true},
+        {arType: 'C1V1C1V2', addCV: true},
+        {arType: 'C1V1C2V2', addCV: true},
+    ]);
 
+    
     navigation.setOptions({
         headerRight: () => (
             <TouchableOpacity onPress={() => navigation.navigate('Home')}>

@@ -1,6 +1,7 @@
 import React, { useState, useRef,   useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button, Card } from "react-native-elements";
+import { updateArtic } from "../helpers/fb-settings";
 
 
 
@@ -16,10 +17,9 @@ const CardScreen = ({navigation}) =>{
         return(
             <CheckBox
                 title={'Mastered?'}
-                checked={!this.state.checked}
+                checked={!item.mastery}
                 onPress={() => {
-                    let newArr = [...articType];
-                    newArr[index] = {...item, mastery: !item.mastery}
+                    updateArtic({ ...item, mastery: !item.mastery });
                 }}
             />
         )
