@@ -1,4 +1,4 @@
-import React, { useState, useRef,   useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback, Image } from "react-native";
 import { Button } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";

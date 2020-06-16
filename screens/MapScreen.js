@@ -8,13 +8,12 @@ import {
   } from "react-google-maps";
 import {getMap} from '../api/gmap';
 
-function Map(){
-    return(
-        <GoogleMap 
-            defaultZoom={10}
-            defaultCenter={{lat: 25, lng: 25}}
-        />
-    )
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8
+  });
 }
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));

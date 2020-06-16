@@ -7,7 +7,7 @@ import { storeArtic } from '../helpers/fb-settings';
 
 
 
-const CustomScreen = ({ route, navigation }) =>{
+const CustomScreen = ({ navigation }) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
     //add check box solution for selection of word type (maybe bubbles, ask about this)
     const articDrop = [
