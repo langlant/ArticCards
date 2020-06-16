@@ -7,7 +7,6 @@ import {
     InfoWindow
   } from "react-google-maps";
 import {gkey} from '../api/gkey'
-import { route, navigation } from "@react-navigation/native";
 import {getMap} from '../api/gmap';
 
 

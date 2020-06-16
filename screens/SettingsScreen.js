@@ -1,19 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {StyleSheet, TouchableOpacity, View} from "react-native";
 import {Text, CheckBox} from "react-native-elements";
 import {FlatList } from "react-native-gesture-handler";
-import {updateArtic} from '../helpers/fb-settings';
 //this is broken some how can't figure out why.
 
-const articType = [
-    {arType: 'CV', addCV: true},
-    {arType: 'VC', addCV: true},
-    {arType: 'VV', addCV: true},
-    {arType: 'VCV', addCV: true},
-    {arType: 'CVCV', addCV: true},
-    {arType: 'C1V1C1V2', addCV: true},
-    {arType: 'C1V1C2V2', addCV: true},
-];
+
 
 const alphaType = [
     {alType: 'A', addAlpha: true},
@@ -48,6 +39,15 @@ const SettingsScreen = ({route, navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
         //Both of which will be using flatlists preferably side by side
         //A card will only be counted if it meets both values being marked true (category and alpha)
+        const [articType, setArticType] = useState([
+            {arType: 'CV', addCV: true},
+            {arType: 'VC', addCV: true},
+            {arType: 'VV', addCV: true},
+            {arType: 'VCV', addCV: true},
+            {arType: 'CVCV', addCV: true},
+            {arType: 'C1V1C1V2', addCV: true},
+            {arType: 'C1V1C2V2', addCV: true},
+        ]);
 
     navigation.setOptions({
         headerRight: () => (
@@ -60,7 +60,7 @@ const SettingsScreen = ({route, navigation}) =>{
             onPress={() => {
                 // navigate back with new settings.
                 navigation.navigate('Home', {
-                    //pass deck to CardScreen
+                    currentSetting: articType
                 });
             }}
             >
@@ -76,13 +76,15 @@ const SettingsScreen = ({route, navigation}) =>{
                 title={item.arType}
                 checked={item.addCV}
                 onPress={() => {
-                    updateArtic({...item, addCV: !item.addCV});
+                    let newArr = [... articType];
+                    newArr[index] = {...item, addCV: !item.addCV};
+                    setArticType(newArr);
+                    console.log(newArr);
                 }}
             />
         )
     }
-
-    /*
+/*
     const renderAlphaType = ({index, item}) =>{
         
         return(
@@ -97,6 +99,7 @@ const SettingsScreen = ({route, navigation}) =>{
     }
             //This code was originally in return but moved for commenting
             //This portion complicates things unneccessarily
+    
             <Text style={styles.textmenu}>Alphabet Type</Text>
             <Text style={styles.textsubmenu}> Select what words to include based on their starting letter</Text>
             <FlatList  

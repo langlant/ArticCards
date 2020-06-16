@@ -1,7 +1,6 @@
 import React, { useState, useRef,  useEffect } from "react";
 import { StyleSheet, Text, View, Linking} from "react-native";
 import {Button, Input} from "react-native-elements";
-import { route, navigation } from "@react-navigation/native";
 //This page is complete other than some styling
 //Add find speech pathologist near you feature
 const AboutScreen = ({navigation, route}) =>{
