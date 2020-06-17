@@ -26,10 +26,8 @@ const HomeScreen = ({route, navigation}) => {
     if(route.params?.deck){
       setDeck({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
     }
-    if(route.params?.articType){
-      setArticType({arType: state.arType, addCV: state.addCV})
-    }
-  }, [route.params?.articType, route.params?.deckeck, route.params?.articCard] );
+
+  }, [route.params?.deckeck, route.params?.articCard] );
   
   
   navigation.setOptions({

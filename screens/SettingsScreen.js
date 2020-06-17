@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {StyleSheet, TouchableOpacity, View} from "react-native";
 import {Text, CheckBox} from "react-native-elements";
-import {FlatList } from "react-native-gesture-handler";
+import {FlatList, State } from "react-native-gesture-handler";
 //this is broken some how can't figure out why.
 
 const SettingsScreen = ({route, navigation}) =>{
@@ -20,6 +20,11 @@ const SettingsScreen = ({route, navigation}) =>{
         {arType: 'C1V1C2V2', addCV: true},
     ]);
 
+    useEffect(() => {
+        if(route.params?.articType){
+          setArticType({arType: state.arType, addCV: state.addCV})
+        }
+      }, [route.params?.articType] );
 
     
     navigation.setOptions({
@@ -33,8 +38,10 @@ const SettingsScreen = ({route, navigation}) =>{
             onPress={() => {
                 // navigate back with new settings.
                 navigation.navigate('Home', {
-                    currentSetting: articType
-                });
+                    articType
+                    
+                },
+                console.log(articType));
             }}
             >
             <Text style={styles.headerButton}> Save </Text>

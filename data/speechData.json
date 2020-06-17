@@ -1,0 +1,734 @@
+{
+    "html_attributions" : [],
+    "next_page_token" : "CoQCAAEAACbKrdjzVhXdaAaU10XW8CGWAcLKXS6k85RUBDXeUbBIcfuTDH7cRSIBZLsAxPTLOTWJAwZ_5s1kp8iuEeEJawGFyor608FU4cnia1fMjiZihXVNhRjQeBW_cXErVUuPz9oPvzeELIjJrn9e0cEM3FYnwcq6imgtlrW0I4FuwXdIPBtJRfzjw56pyBmv1efMQ_QL_xoRcdlZc2jKYwh80d8E9qQUeeXGI4Ugv2h7yQM_-olJiMwiiF2r_tXukA8gBbZwI5qKjMAwvPi09o8kBRQ9P_78_8ekUWw8hIHIYckh56EMgrLbJrVMpGgm72OR3SRmZ8ypPPAokeqbT9GYkdISEJj-BOaQI1_qUmgNEVbB9OwaFCrY_Czds9CFTcs5Qg354MEHtYnC",
+    "results" : [
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "10520 Riverbluff Trail, Zeeland, MI 49464, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.7914586,
+                "lng" : -86.0413085
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.79287947989271,
+                   "lng" : -86.03984867010728
+                },
+                "southwest" : {
+                   "lat" : 42.79017982010727,
+                   "lng" : -86.04254832989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "7250ac92fbe1941711edcfd07aa0b5afb1e8e8e0",
+          "name" : "Small Talk, Ltd. Speech Therapy",
+          "place_id" : "ChIJYbzMXHztGYgR6HIXZiMWjqg",
+          "plus_code" : {
+             "compound_code" : "QXR5+HF Zeeland, Michigan",
+             "global_code" : "86JMQXR5+HF"
+          },
+          "rating" : 0,
+          "reference" : "ChIJYbzMXHztGYgR6HIXZiMWjqg",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "355 Settlers Rd #1c, Holland, MI 49423, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.784346,
+                "lng" : -86.0797597
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.78569187989272,
+                   "lng" : -86.07863172010728
+                },
+                "southwest" : {
+                   "lat" : 42.78299222010727,
+                   "lng" : -86.08133137989273
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "508b65a3349e348ade6b2bd2f7ea03040006f42b",
+          "name" : "The Center for Childhood Development",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 2391,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/106079195956317342643\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAASOsDteR1686JcHUKc6SOXvLwOY_9TkRGMEpvvQwOqHqCADO3dZC21cQ4pReF_QNqklsljZ_GgHyJh29dkwnIph79yKSmngqSgM4QdWzLMWW64s7-omPsYY4pKUlTmtpBEhAc3vOPIQv89LYRMQBabJWdGhTFa7lfYR8qpEdwzehBO30f_WsX2w",
+                "width" : 4251
+             }
+          ],
+          "place_id" : "ChIJtynJwPPyGYgR71XUIyV6Va4",
+          "plus_code" : {
+             "compound_code" : "QWMC+P3 Holland, Michigan",
+             "global_code" : "86JMQWMC+P3"
+          },
+          "rating" : 5,
+          "reference" : "ChIJtynJwPPyGYgR71XUIyV6Va4",
+          "types" : [ "physiotherapist", "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 1
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "520 Butternut Dr. Suite 8, PMB #224, Holland, MI 49424, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.8134861,
+                "lng" : -86.12294720000001
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.81483552989273,
+                   "lng" : -86.12159837010728
+                },
+                "southwest" : {
+                   "lat" : 42.81213587010728,
+                   "lng" : -86.12429802989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "0ce855507bad20783945044149b1de05eb588b63",
+          "name" : "Kid At Heart Therapy LLC",
+          "place_id" : "ChIJf9MUmDyNGYgRVU6Ik5KycTw",
+          "plus_code" : {
+             "compound_code" : "RV7G+9R Holland, Michigan",
+             "global_code" : "86JMRV7G+9R"
+          },
+          "rating" : 0,
+          "reference" : "ChIJf9MUmDyNGYgRVU6Ik5KycTw",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "4120 Chicago Dr SW, Grandville, MI 49418, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.908349,
+                "lng" : -85.765979
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.90980917989273,
+                   "lng" : -85.76469987010728
+                },
+                "southwest" : {
+                   "lat" : 42.90710952010728,
+                   "lng" : -85.76739952989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "921e7f6d8d13b6303bd8e9143192c796efde1148",
+          "name" : "Kelley Linda A Ma Ccc Slp",
+          "place_id" : "ChIJCcQFvXiwGYgRQKR-rVWXH3M",
+          "plus_code" : {
+             "compound_code" : "W65M+8J Grandville, Michigan",
+             "global_code" : "86JPW65M+8J"
+          },
+          "rating" : 3,
+          "reference" : "ChIJCcQFvXiwGYgRQKR-rVWXH3M",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 1
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "7086 8th Ave, Jenison, MI 49428, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.898004,
+                "lng" : -85.800884
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.89945672989272,
+                   "lng" : -85.79958932010727
+                },
+                "southwest" : {
+                   "lat" : 42.89675707010727,
+                   "lng" : -85.80228897989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "92921668bb421df77489bc15fbd3a49b6f1f1d91",
+          "name" : "The Center For Childhood Development",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 576,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/115116168899371559164\"\u003eCenter For Childhood Development\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAATr7dhWh2gZ_9douJqvamd9dfQ2O9ImfxkyKzOj10Ihstw3phj5cp_v-H6OrgJVvyxyIumw7X3unPMWBUlUyRccpcl2UX4bBa8O3iMgD3qmrlAbstVIvoMGjjA-J89rF8EhCwTL_bsMt7j_uPEnckE4lIGhS50nSTdYFcM2XvBnTJqzf71cB6tA",
+                "width" : 1024
+             }
+          ],
+          "place_id" : "ChIJXdTmXFG6GYgRI-SBx-rOpRE",
+          "plus_code" : {
+             "compound_code" : "V5XX+6J Jenison, Georgetown Twp, MI",
+             "global_code" : "86JPV5XX+6J"
+          },
+          "rating" : 4.4,
+          "reference" : "ChIJXdTmXFG6GYgRI-SBx-rOpRE",
+          "types" : [ "physiotherapist", "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 7
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "2251 E Paris Ave S E, Grand Rapids, MI 49546, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.9230284,
+                "lng" : -85.56989530000001
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.92438857989272,
+                   "lng" : -85.56825817010727
+                },
+                "southwest" : {
+                   "lat" : 42.92168892010728,
+                   "lng" : -85.57095782989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "2e13aa45f726f8a905e7be8155b5be2041fa379a",
+          "name" : "Family Tree Therapies",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 1000,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/103540587752233339844\"\u003eFamily Tree Therapies\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAA4yGqipcRhg0cA7yh7x4plFRwgC1I-88h6Mod_K-V14Eo289ufK-Pkw72xc4ScFeZkDVkUpPtQwOFjFhqsX61Ig6sSmzVJ2EV0uQTo5in_J_0A97LzenbSX-qNrn2gE0LEhA6f8qXinvpsgi0oRCm69TeGhQyRv42n5efp1pLnm5iuNWiG9WR7g",
+                "width" : 1000
+             }
+          ],
+          "place_id" : "ChIJ0f53VHBNGIgRk2YfB1U9h04",
+          "plus_code" : {
+             "compound_code" : "WCFJ+62 Grand Rapids, Michigan",
+             "global_code" : "86JPWCFJ+62"
+          },
+          "rating" : 4,
+          "reference" : "ChIJ0f53VHBNGIgRk2YfB1U9h04",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 2
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "2650 Byron Station Dr SW, Byron Center, MI 49315, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.819738,
+                "lng" : -85.729545
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.82123837989272,
+                   "lng" : -85.72819722010729
+                },
+                "southwest" : {
+                   "lat" : 42.81853872010728,
+                   "lng" : -85.73089687989274
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "4b4f2620c004472f92fca6bcd8abf5cf59c5ce02",
+          "name" : "Byron Center Speech Therapy",
+          "place_id" : "ChIJk-r9AIa3GYgRj5DxEjnRyJw",
+          "plus_code" : {
+             "compound_code" : "R79C+V5 Byron Center, Michigan",
+             "global_code" : "86JPR79C+V5"
+          },
+          "rating" : 5,
+          "reference" : "ChIJk-r9AIa3GYgRj5DxEjnRyJw",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 1
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "3010 Wilson Ave SW, Grandville, MI 49418, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.909216,
+                "lng" : -85.76263
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.91049277989271,
+                   "lng" : -85.76127372010728
+                },
+                "southwest" : {
+                   "lat" : 42.90779312010727,
+                   "lng" : -85.76397337989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "63025b8f668a76c9ae7b9f0a1334d110476b8d10",
+          "name" : "Katie Antor M.A., CCC-SLP",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3888,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/109573643525829791857\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAACRf-srTsqs0EsmZW-Cvysex8n-jKgcImmCS9JogR0u4ewxHVtQwOZJP7fFoMDIm57frBNIRDMS5CtM8ZW8COyxcZ1ZbXvuRGS83yBeJEyjQg07OcAgdzkhzuIGeW1gB2EhA68b0hC6U6t5fqxzVUOi8tGhQ8fRjTm7T5vNUhpquZJAblrtdo2Q",
+                "width" : 5184
+             }
+          ],
+          "place_id" : "ChIJM4vd5RaxGYgRuVxnC9F5KQM",
+          "plus_code" : {
+             "compound_code" : "W65P+MW Grandville, Michigan",
+             "global_code" : "86JPW65P+MW"
+          },
+          "rating" : 5,
+          "reference" : "ChIJM4vd5RaxGYgRuVxnC9F5KQM",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 1
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "2922 Fuller Ave NE Suite 107, Grand Rapids, MI 49505, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 43.01621,
+                "lng" : -85.6385238
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 43.01755787989273,
+                   "lng" : -85.63729792010727
+                },
+                "southwest" : {
+                   "lat" : 43.01485822010729,
+                   "lng" : -85.63999757989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "dcfb2e75e83f861b2e44ed4b6ac5b9edd76f0db7",
+          "name" : "Building Blocks Therapy Services",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 705,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/102273717281471825602\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAA6yZLLSw2GaM97fz9WXnN-Gyh0nsfSDjRiXHYifculbTrYC2oV7P-6HR5uAIdsOzbFTsX6nFWX0KrvHmnz6K-m6TH7lDE3e6oKomh0h7AuKBQZ6-X3Q-B1nmAsPVGyzNgEhAf9R5toxPhg_mFrL1XczB1GhS7T0sv-Qcdk5AJhCEARShnkoKpEQ",
+                "width" : 1040
+             }
+          ],
+          "place_id" : "ChIJKX_U_96tGYgRIod1R46XT1o",
+          "plus_code" : {
+             "compound_code" : "2986+FH Grand Rapids, Michigan",
+             "global_code" : "86MP2986+FH"
+          },
+          "rating" : 5,
+          "reference" : "ChIJKX_U_96tGYgRIod1R46XT1o",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 1
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "1061 Michigan Ave, Muskegon, MI 49441, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 43.2276429,
+                "lng" : -86.26887809999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 43.22909547989273,
+                   "lng" : -86.26752592010727
+                },
+                "southwest" : {
+                   "lat" : 43.22639582010728,
+                   "lng" : -86.27022557989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "53ab03148f0ad9d62b7a00a7e84a9c0b751959b0",
+          "name" : "Lakeshore Speech Associates",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 800,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/104772184616537809345\"\u003eLakeshore Speech Associates\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAdHbVJ3VxRYAaC3VYVZ8377Z3FQD6n-lVSnSTPHwv_sSeGuNZMGFpW8UJi1YXOh31go4hjonDT58UKgn57-1i_Urqi3e8FYs9pRp2UNvTzIwgGQJLDNhHZTQ7lv2FBUiLEhD8bIh4Y8_fcybYQ1ypyqieGhSD693VvGqk87CVQ6MaDMjnG86--Q",
+                "width" : 1100
+             }
+          ],
+          "place_id" : "ChIJNca4_zLWG4gRCIxHEwx5P0M",
+          "plus_code" : {
+             "compound_code" : "6PHJ+3C Muskegon, Michigan",
+             "global_code" : "86MM6PHJ+3C"
+          },
+          "rating" : 0,
+          "reference" : "ChIJNca4_zLWG4gRCIxHEwx5P0M",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "1011 W Maple St # 300, Kalamazoo, MI 49008, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.2722122,
+                "lng" : -85.5984534
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.27356087989272,
+                   "lng" : -85.59702492010727
+                },
+                "southwest" : {
+                   "lat" : 42.27086122010728,
+                   "lng" : -85.59972457989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "dad5dc2f9ea8061ff9c6ec3f5d1c5ac11d931285",
+          "name" : "Kalamazoo Speech Associates, LLC",
+          "place_id" : "ChIJAUX9K3-dF4gRdZsOcaji568",
+          "plus_code" : {
+             "compound_code" : "7CC2+VJ Kalamazoo, Michigan",
+             "global_code" : "86JP7CC2+VJ"
+          },
+          "rating" : 5,
+          "reference" : "ChIJAUX9K3-dF4gRdZsOcaji568",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 1
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "330 Barclay Ave NE, Grand Rapids, MI 49503, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.969498,
+                "lng" : -85.66345199999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.97084787989272,
+                   "lng" : -85.66226547010727
+                },
+                "southwest" : {
+                   "lat" : 42.96814822010728,
+                   "lng" : -85.66496512989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "f5c1a34eb0a8e10fa500bbff10be3629e69ce500",
+          "name" : "Barton Angela K",
+          "place_id" : "ChIJb-s7LratGYgRpNRaU7IIObc",
+          "plus_code" : {
+             "compound_code" : "X89P+QJ Grand Rapids, Michigan",
+             "global_code" : "86JPX89P+QJ"
+          },
+          "rating" : 0,
+          "reference" : "ChIJb-s7LratGYgRpNRaU7IIObc",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "100 Michigan St NE, Grand Rapids, MI 49503, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.9697763,
+                "lng" : -85.66467849999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.97128482989272,
+                   "lng" : -85.66345462010729
+                },
+                "southwest" : {
+                   "lat" : 42.96858517010728,
+                   "lng" : -85.66615427989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "b203ef6891cce321959f65ea053a77e7a9c9fa66",
+          "name" : "Kramer Kirsten A",
+          "place_id" : "ChIJpbFPVsitGYgRmt18tfNy1tE",
+          "plus_code" : {
+             "compound_code" : "X89P+W4 Grand Rapids, Michigan",
+             "global_code" : "86JPX89P+W4"
+          },
+          "rating" : 0,
+          "reference" : "ChIJpbFPVsitGYgRmt18tfNy1tE",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "2055 Rosewood Avenue South East, Grand Rapids, MI 49506, Grand Rapids, MI 49506, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.92571179999999,
+                "lng" : -85.6272666
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.92706992989272,
+                   "lng" : -85.62624997010728
+                },
+                "southwest" : {
+                   "lat" : 42.92437027010727,
+                   "lng" : -85.62894962989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "99ae5c654d51be35b0ce3d4ed672a18f7bfa25d9",
+          "name" : "Meredith D. Sanders, SLP",
+          "place_id" : "ChIJCZlaZJeyGYgRxsnuUPT5euA",
+          "plus_code" : {
+             "compound_code" : "W9GF+73 Grand Rapids, Michigan",
+             "global_code" : "86JPW9GF+73"
+          },
+          "rating" : 0,
+          "reference" : "ChIJCZlaZJeyGYgRxsnuUPT5euA",
+          "types" : [ "doctor", "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "301 Straley St, North Muskegon, MI 49445, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 43.26567989999999,
+                "lng" : -86.2534373
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 43.26707267989271,
+                   "lng" : -86.25198022010728
+                },
+                "southwest" : {
+                   "lat" : 43.26437302010727,
+                   "lng" : -86.25467987989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "089192588b0ae1b196f564b9fcb21bb3d29c6142",
+          "name" : "lakeshore speech associates",
+          "place_id" : "ChIJfVa0V1R9GYgRN1WD3OWN-Nk",
+          "plus_code" : {
+             "compound_code" : "7P8W+7J North Muskegon, Michigan",
+             "global_code" : "86MM7P8W+7J"
+          },
+          "rating" : 0,
+          "reference" : "ChIJfVa0V1R9GYgRN1WD3OWN-Nk",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "1011 W Maple St, Kalamazoo, MI 49008, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.27217110000001,
+                "lng" : -85.59838480000001
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.27352027989273,
+                   "lng" : -85.59699117010727
+                },
+                "southwest" : {
+                   "lat" : 42.27082062010729,
+                   "lng" : -85.59969082989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "123b70e277586fc56307b070255dd1110bda0c79",
+          "name" : "Crouse Jennifer S",
+          "place_id" : "ChIJAUX9K3-dF4gR0eGmg_jTXwY",
+          "plus_code" : {
+             "compound_code" : "7CC2+VJ Kalamazoo, Michigan",
+             "global_code" : "86JP7CC2+VJ"
+          },
+          "rating" : 0,
+          "reference" : "ChIJAUX9K3-dF4gR0eGmg_jTXwY",
+          "types" : [ "doctor", "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "1955 Augusta Valley Ln SE, Ada, MI 49301, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.930812,
+                "lng" : -85.41278000000001
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.93177587989272,
+                   "lng" : -85.41179277010728
+                },
+                "southwest" : {
+                   "lat" : 42.92907622010728,
+                   "lng" : -85.41449242989273
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "6ac1072e272bf7efba1b696609b07aab87ec3912",
+          "name" : "Sunny Day Pediatric Speech and Feeding Therapy",
+          "photos" : [
+             {
+                "height" : 337,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/109669342403853626931\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAABuUhywTU-Q_omwUlfwnlb8AGyM-op-FM4e7-z0og4682IUgjSmvNvNQQ122gMfEa65EyUmELJGv5XPe4Q5yQjIvY-gogVMF4Hch6fDfKQx5QYn_wnxyL0eibqEgeKCjaEhC9LULNe7zfUBmWsE-VCJuwGhQwxqy1m6LmQkDXzqokhJyw3lxgPA",
+                "width" : 322
+             }
+          ],
+          "place_id" : "ChIJX87YldZbGIgRELBugk6YQIw",
+          "plus_code" : {
+             "compound_code" : "WHJP+8V Ada, Michigan",
+             "global_code" : "86JPWHJP+8V"
+          },
+          "rating" : 0,
+          "reference" : "ChIJX87YldZbGIgRELBugk6YQIw",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "4829 E Beltline Ave NE, Grand Rapids, MI 49525, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 43.0510881,
+                "lng" : -85.5819408
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 43.05239132989272,
+                   "lng" : -85.58050037010729
+                },
+                "southwest" : {
+                   "lat" : 43.04969167010727,
+                   "lng" : -85.58320002989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "17797cd7a449f1d214058433f9709c2f7058a9a8",
+          "name" : "Rockford Speech Therapy",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "place_id" : "ChIJnc20WuZVGIgRXyYW_bNM4hI",
+          "plus_code" : {
+             "compound_code" : "3C29+C6 Grand Rapids, Michigan",
+             "global_code" : "86MP3C29+C6"
+          },
+          "rating" : 0,
+          "reference" : "ChIJnc20WuZVGIgRXyYW_bNM4hI",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "2036 Chesaning Dr SE, Grand Rapids, MI 49506, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.926272,
+                "lng" : -85.615849
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.92720732989272,
+                   "lng" : -85.61456067010728
+                },
+                "southwest" : {
+                   "lat" : 42.92450767010728,
+                   "lng" : -85.61726032989273
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "b6e3e4799ff12a1daecb20aadd994bca73abe88a",
+          "name" : "Shawnee Park Hearing Impaired",
+          "place_id" : "ChIJQwX2VqOyGYgR-m3U6bFO_7Q",
+          "rating" : 0,
+          "reference" : "ChIJQwX2VqOyGYgR-m3U6bFO_7Q",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       },
+       {
+          "business_status" : "OPERATIONAL",
+          "formatted_address" : "1490 E Beltline Ave SE, Grand Rapids, MI 49506, United States",
+          "geometry" : {
+             "location" : {
+                "lat" : 42.9360895,
+                "lng" : -85.5831575
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 42.93744472989273,
+                   "lng" : -85.58212467010728
+                },
+                "southwest" : {
+                   "lat" : 42.93474507010728,
+                   "lng" : -85.58482432989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "2d2e4d3e4b5a7f547fc92ec15066175ffff2fa9f",
+          "name" : "Verheek Sharon M",
+          "place_id" : "ChIJ2QZ_jqBSGIgRiPP-0ZuyG78",
+          "plus_code" : {
+             "compound_code" : "WCP8+CP Grand Rapids, Michigan",
+             "global_code" : "86JPWCP8+CP"
+          },
+          "rating" : 0,
+          "reference" : "ChIJ2QZ_jqBSGIgRiPP-0ZuyG78",
+          "types" : [ "health", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 0
+       }
+    ],
+    "status" : "OK"
+ }

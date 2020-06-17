@@ -11,9 +11,9 @@ import { State } from "react-native-gesture-handler";
 //Deck will be imported here and the information from SettingScreen will be imported here as well
 const CardScreen = ({route, navigation}) =>{
     
-    const { currentSettings, passDeck } = route.params;
+    const { articType, passDeck } = route.params;
     const {nCard, setNCard} = useState({});
-    
+
     const renderCard = ({index, item}) => {
         <View>
             <Card
@@ -38,8 +38,8 @@ const CardScreen = ({route, navigation}) =>{
         let deck = new Array();
     
         for(var i = 0; i < passDeck.length; i++){
-            for(var j = 0; j < currentSettings.length; j++){
-                if((passDeck.cType[i] == currentSettings[j].arType) && (currentSettings[j].addCV == true)){
+            for(var j = 0; j < articType.length; j++){
+                if((passDeck.cType[i] == articType[j].arType) && (articType[j].addCV == true)){
                     deck.push(passDeck[i]);
                 }
             }
