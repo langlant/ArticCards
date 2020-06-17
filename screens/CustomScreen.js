@@ -5,6 +5,7 @@ import { Dropdown } from "react-native-material-dropdown";
 import { storeArtic } from '../helpers/fb-settings';
 import Toast from 'react-native-root-toast';
 
+
 const CustomScreen = ({ route, navigation }) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
     //add check box solution for selection of word type (maybe bubbles, ask about this)
@@ -26,7 +27,7 @@ const CustomScreen = ({ route, navigation }) =>{
         mastery: false
     })
 
-    
+
 
     return(
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -57,7 +58,7 @@ const CustomScreen = ({ route, navigation }) =>{
                     title="Save"
                     onPress={() => {
                         storeArtic({articCard});
-                        Toast.show(`Saved: ${articCard.word}!`, {
+                        Toast.show(`Saved; ${articCard.word}`,{
                             duration: Toast.durations.SHORT,
                             animation: true,
                             hideOnPress: true,
@@ -68,11 +69,7 @@ const CustomScreen = ({ route, navigation }) =>{
                     title="Clear"
                     onPress={() => {
                         setCard({...articCard, word: '', aType: '', cType: '', imageUrl: '', mastery: false});
-                        Toast.show(`Cleared!`, {
-                            duration: Toast.durations.SHORT,
-                            animation: true,
-                            hideOnPress: true,
-                        })
+
                     }}
                 />
             </View>
