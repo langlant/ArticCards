@@ -16,9 +16,15 @@ const AboutScreen = ({navigation, route}) =>{
 
     return(
         <View style={styles.container}>
-            <Text style={styles.textmenu}>Disclaimer: </Text>
-            <Text style={styles.textsubmenu}>This app was created to be an aid to your child's development. By no means is this meant to replace your child's speech therapy needs. If you feel your child might be experiencing delays in speech, please seek the advice of professionals.</Text>
-            <Text style={styles.textsubmenu}>For more information please visit: </Text>
+            <Text style={styles.textmenu}>
+                Disclaimer: 
+            </Text>
+            <Text style={styles.textsubmenu}>
+                This app was created to be an aid to your child's development. By no means is this meant to replace your child's speech therapy needs. If you feel your child might be experiencing delays in speech, please seek the advice of professionals.
+            </Text>
+            <Text style={styles.textsubmenu}>
+                For more information please visit: 
+            </Text>
             <Text
                 style={styles.textlink}
                 onPress={() => Linking.openURL('https://kidshealth.org/en/parents/speech-therapy.html')}
@@ -31,8 +37,19 @@ const AboutScreen = ({navigation, route}) =>{
             >
                 Johns Hopkins All Childrens Hospital   
             </Text>
-            <Text style={styles.textsubmenu}>To locate a speech pathologist near you, just hit search!</Text>
 
+            <Text 
+                style={styles.textsubmenu}>For more activities and materials: 
+            </Text>
+            <Text
+                style={styles.textlink}
+                onPress={() => Linking.openURL('https://www.speechandlanguagekids.com/free-materials/://www.hopkinsallchildrens.org/Patients-Families/Health-Library/HealthDocNew/Delayed-Speech-or-Language-Development')}
+            >
+                Speech and Language Kids 
+            </Text>
+            <Text style={styles.textsubmenu}>
+                To locate a speech pathologist near you, just hit search!
+            </Text>
             <Button
                 title="Search"
                 onPress={() => {
@@ -51,10 +68,12 @@ const styles = StyleSheet.create({
     },
     textmenu: {
       textAlign: 'center',
+      padding: 10,
       fontSize: 40
     },
     textsubmenu:{
       textAlign: 'center',
+      padding: 10,
       fontSize: 20
     },
     textlink:{

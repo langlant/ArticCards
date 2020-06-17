@@ -9,6 +9,7 @@ import {
   } from "react-google-maps";
 import * as speechData from "../data/speechData.json";
 import { gkey } from '../api/gkey';
+import { getMap } from '../api/gmap';
 
 function Map(){
   const [selectedSpeech, setSelectedSpeech] = useState(null);
