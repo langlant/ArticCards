@@ -38,7 +38,7 @@ const CardScreen = ({route, navigation}) =>{
     
         for(var i = 0; i < passDeck.length; i++){
             for(var j = 0; j < currentSettings.length; j++){
-                if((passDeck.cType == currentSettings.arType) && (currentSettings.addCV == true)){
+                if((passDeck.cType[i] == currentSettings[j].arType) && (currentSettings[j].addCV == true)){
                     deck.push(passDeck[i]);
                 }
             }
@@ -75,7 +75,7 @@ const CardScreen = ({route, navigation}) =>{
                     buildDeck()
                 }
             />
-            {renderCard(deck[0])}
+            {renderCard(deck)}
             <View style={styles.row}>
                 <Button
                     title='Next'
