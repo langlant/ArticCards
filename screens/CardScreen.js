@@ -2,6 +2,7 @@ import React, { useState, useRef,   useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button, Card } from "react-native-elements";
 import { updateArtic } from "../helpers/fb-settings";
+import { State } from "react-native-gesture-handler";
 //Cannot navigate to this page, not sure why
 
 //general formatting and importing of the deck. Probably put shuffle function here with imported array
@@ -32,44 +33,62 @@ const CardScreen = ({route, navigation}) =>{
             />
         )
     }
-
+    function buildDeck(){
+        let deck = new Array();
     
-    function buildDeck() {
-        var deck = [];
-       for ( var i = 0; i < passDeck.length; i++){
-            if( (passDeck[i].cType == arType) && (addCV == true)){
-                deck.push(passDeck[i]);
+        for(var i = 0; i < passDeck.length; i++){
+            for(var j = 0; j < currentSettings.length; j++){
+                if((passDeck.cType == currentSettings.arType) && (currentSettings.addCV == true)){
+                    deck.push(passDeck[i]);
+                }
             }
-            return deck;
-       }
+        }
+        return deck;
     }
-    
-    buildDeck();
+    function nextCard(){
+        var k = deck.indexOf();
+        
+        if( (k+1) <= deck.length){
+            return deck[k+1];
+        } else{
+            return deck[0];
+        }
 
-    /*
-    function shuffle(o) {
-	    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-	    return o;
-    };
-    */
+    }
+
+    function previousCard(){
+        var k = deck.indexOf();
+        
+        if( (k-1) >= 0){
+            return deck[k-1];
+        } else{
+            return deck[(deck.length - 1)];
+        }
+    }
 
     return(
         <View>
             <Text>Cards</Text>
-            <Card
-                title={item.word}  
-                image={{imageUrl: item.imageUrl}}                  
-            >
-                <Text>{item.cType}</Text>
-            </Card>
-
+            <Button
+                title='Start'
+                onPress={
+                    buildDeck()
+                }
+            />
+            {renderCard(deck[0])}
             <View style={styles.row}>
                 <Button
                     title='Next'
+                    onPress={
+                        nextCard()
+                    }
                 />
                 renderItem{renderMastery}
                 <Button
                     title='Previous'
+                    onPress = {
+                        previousCard()
+                    }
                 />
             </View>
         </View>

@@ -3,7 +3,7 @@ import { StyleSheet, Text, Keyboard, View, TouchableWithoutFeedback } from "reac
 import { Button, Input } from "react-native-elements";
 import { Dropdown } from "react-native-material-dropdown";
 import { storeArtic } from '../helpers/fb-settings';
-import Toast from 'react-native-root-toast';
+//import Toast from 'react-native-root-toast';
 
 
 const CustomScreen = ({ route, navigation }) =>{
@@ -58,11 +58,11 @@ const CustomScreen = ({ route, navigation }) =>{
                     title="Save"
                     onPress={() => {
                         storeArtic({articCard});
-                        Toast.show(`Saved; ${articCard.word}`,{
+                        /*Toast.show(`Saved; ${articCard.word}`,{
                             duration: Toast.durations.SHORT,
                             animation: true,
                             hideOnPress: true,
-                        })
+                        })*/
                     }} 
                 />
                 <Button

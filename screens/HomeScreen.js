@@ -6,7 +6,7 @@ import { initArticDB, setupArticListener } from '../helpers/fb-settings';
 
 
 const HomeScreen = ({route, navigation}) => {
-  const [ initialDeck, setInitialDeck] = useState([]);
+  const [ deck, setDeck] = useState([]);
 
   useEffect(() => {
     try {
@@ -15,7 +15,7 @@ const HomeScreen = ({route, navigation}) => {
       console.log(err);
     }
     setupArticListener((items) => {
-      setInitialDeck(items);
+      setDeck(items);
     });
   }, []);
 
@@ -23,7 +23,13 @@ const HomeScreen = ({route, navigation}) => {
     if(route.params?.articCard){
       setCard({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
     }
-  }, [route.params?.articType] );
+    if(route.params?.deck){
+      setDeck({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
+    }
+    if(route.params?.articType){
+      setArticType({arType: state.arType, addCV: state.addCV})
+    }
+  }, [route.params?.articType, route.params?.deckeck, route.params?.articCard] );
   
   
   navigation.setOptions({
@@ -63,7 +69,7 @@ const HomeScreen = ({route, navigation}) => {
             title="Start"
             style={styles.buttons}
             onPress={() => navigation.navigate('Cards',
-            {passDeck: initialDeck})}
+            {passDeck: deck})}
           />
           <Button
             title="Progress"

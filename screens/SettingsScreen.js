@@ -49,6 +49,7 @@ const SettingsScreen = ({route, navigation}) =>{
         {arType: 'C1V1C2V2', addCV: true},
     ]);
 
+
     
     navigation.setOptions({
         headerRight: () => (
