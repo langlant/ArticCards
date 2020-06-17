@@ -142,6 +142,10 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       fontSize: 15
     },
+    headerButton: {
+        color: '#fff',
+        fontWeight: 'bold',
+      },
 });
 
 export default SettingsScreen;

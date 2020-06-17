@@ -9,14 +9,14 @@ import {
 import {getMap} from '../api/gmap';
 import {gkey} from '../api/gkey'
 
-const mapData = `http://maps.googleapis.com/maps/api/place/textsearch/json?query=speech+pathologists&key=${gkey}`
+const mapData = getMap();
 
 function Map(){
   const [selectedSpeech, setSelectedSpeech] = useState(null);
 
   return(
     <GoogleMap
-      defaultZoom={10} defaultCenter={{lat: 25, lng: 25}}
+      defaultZoom={10} defaultCenter={{lat: 42.807091, lng: -86.018860}}
     >
       {mapData.results.map((speech) => (
         <Marker key={speech.place_id} position={{

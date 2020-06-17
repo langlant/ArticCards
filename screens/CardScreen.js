@@ -12,6 +12,7 @@ import { State } from "react-native-gesture-handler";
 const CardScreen = ({route, navigation}) =>{
     
     const { currentSettings, passDeck } = route.params;
+    
     const renderCard = ({index, item}) => {
         <View>
             <Card
