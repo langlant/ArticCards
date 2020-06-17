@@ -17,9 +17,11 @@ const CardScreen = ({route, navigation}) =>{
     const renderCard = ({index, item}) => {
         <View>
             <Card
-            title={item.word}
-            image={{uri: item.imageUrl}}>
-                <Text> {item.cType} </Text>
+                title={item.word}
+                image={{uri: item.imageUrl}}>
+                    <Text> 
+                        {item.cType} 
+                    </Text>
             </Card>
         </View>
     }

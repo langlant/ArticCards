@@ -24,13 +24,15 @@ const SettingsScreen = ({route, navigation}) =>{
         if(route.params?.articType){
           setArticType({arType: state.arType, addCV: state.addCV})
         }
-      }, [route.params?.articType] );
+    }, [route.params?.articType] );
 
     
     navigation.setOptions({
         headerRight: () => (
             <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-            <Text style={styles.headerButton}> Cancel </Text>
+                <Text style={styles.headerButton}> 
+                    Cancel 
+                </Text>
             </TouchableOpacity>
         ),
         headerLeft: () => (
@@ -44,7 +46,9 @@ const SettingsScreen = ({route, navigation}) =>{
                 console.log(articType));
             }}
             >
-            <Text style={styles.headerButton}> Save </Text>
+                <Text style={styles.headerButton}> 
+                    Save 
+                </Text>
             </TouchableOpacity>
         ),
     });    

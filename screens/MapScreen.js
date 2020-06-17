@@ -36,13 +36,13 @@ function Map(){
         <InfoWindow position={{
           lat: selectedSpeech.geometry.location.lat, 
           lng: selectedSpeech.geometry.location.lng
-        }}
-        onPress={() => {
-          setSelectedSpeech(null);
-        }}
-        onCloseClick={() => {
-          setSelectedSpeech(null);
-        }}
+          }}
+          onPress={() => {
+            setSelectedSpeech(null);
+          }}
+          onCloseClick={() => {
+            setSelectedSpeech(null);
+          }}
         >
           <View>
             <Text>Name: {selectedSpeech.name}</Text>

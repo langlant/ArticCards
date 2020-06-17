@@ -59,8 +59,12 @@ const HomeScreen = ({route, navigation}) => {
     return(
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.container}>
-          <Text style={styles.textmenu}>Welcome to Artic Cards</Text>
-          <Text style={styles.textsubmenu}>Press Start to Begin!</Text>
+          <Text style={styles.textmenu}>
+            Welcome to Artic Cards
+          </Text>
+          <Text style={styles.textsubmenu}>
+            Press Start to Begin!
+          </Text>
           <Image source={require('../assets/5-snowflake-png-image.png')}
             style={{width: 300, height: 300, alignSelf: 'center'}}/>
           <Button
