@@ -57,7 +57,7 @@ const CustomScreen = ({ route, navigation }) =>{
                     title="Save"
                     onPress={() => {
                         storeArtic({articCard});
-                        Toast.show(`Saved: ${word.value}!`, {
+                        Toast.show(`Saved: ${articCard.word}!`, {
                             duration: Toast.durations.SHORT,
                             animation: true,
                             hideOnPress: true,
@@ -68,6 +68,11 @@ const CustomScreen = ({ route, navigation }) =>{
                     title="Clear"
                     onPress={() => {
                         setCard({...articCard, word: '', aType: '', cType: '', imageUrl: '', mastery: false});
+                        Toast.show(`Cleared!`, {
+                            duration: Toast.durations.SHORT,
+                            animation: true,
+                            hideOnPress: true,
+                        })
                     }}
                 />
             </View>
