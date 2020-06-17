@@ -25,6 +25,12 @@ const AboutScreen = ({navigation, route}) =>{
             >
                 KidsHealth    
             </Text>
+            <Text
+                style={styles.textlink}
+                onPress={() => Linking.openURL('https://www.hopkinsallchildrens.org/Patients-Families/Health-Library/HealthDocNew/Delayed-Speech-or-Language-Development')}
+            >
+                Johns Hopkins All Childrens Hospital   
+            </Text>
             <Text style={styles.textsubmenu}>To locate a speech pathologist near you, just hit search!</Text>
 
             <Button
