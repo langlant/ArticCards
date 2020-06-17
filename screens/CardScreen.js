@@ -25,6 +25,8 @@ const CardScreen = ({route, navigation}) =>{
             </Card>
         </View>
     }
+
+    /*
     const renderMastery = ({index, item}) =>{
         return(
             <CheckBox
@@ -36,6 +38,8 @@ const CardScreen = ({route, navigation}) =>{
             />
         )
     }
+    */
+
     function buildDeck(){
         let deck = new Array();
     
@@ -83,7 +87,6 @@ const CardScreen = ({route, navigation}) =>{
                         nextCard()
                     }
                 />
-                renderItem{renderMastery}
                 <Button
                     title='Previous'
                     onPress = {

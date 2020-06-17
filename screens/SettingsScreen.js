@@ -22,7 +22,7 @@ const SettingsScreen = ({route, navigation}) =>{
 
     useEffect(() => {
         if(route.params?.articType){
-          setArticType({arType: state.arType, addCV: state.addCV})
+          setArticType(route.params.articType)
         }
     }, [route.params?.articType] );
 

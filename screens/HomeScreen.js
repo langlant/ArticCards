@@ -21,10 +21,10 @@ const HomeScreen = ({route, navigation}) => {
 
   useEffect(() => {
     if(route.params?.articCard){
-      setCard({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
+      setCard(route.params.articCard)
     }
     if(route.params?.deck){
-      setDeck({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
+      setDeck(route.params.deck)
     }
 
   }, [route.params?.deckeck, route.params?.articCard] );
