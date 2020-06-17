@@ -12,7 +12,6 @@ import { State } from "react-native-gesture-handler";
 const CardScreen = ({route, navigation}) =>{
     
     const { currentSettings, passDeck } = route.params;
-    
     const renderCard = ({index, item}) => {
         <View>
             <Card
@@ -45,6 +44,7 @@ const CardScreen = ({route, navigation}) =>{
         }
         return deck;
     }
+
     function nextCard(){
         var k = deck.indexOf();
         
@@ -65,16 +65,12 @@ const CardScreen = ({route, navigation}) =>{
             return deck[(deck.length - 1)];
         }
     }
-
+    
+    buildDeck();
+    
     return(
         <View>
             <Text>Cards</Text>
-            <Button
-                title='Start'
-                onPress={
-                    buildDeck()
-                }
-            />
             {renderCard(deck)}
             <View style={styles.row}>
                 <Button
