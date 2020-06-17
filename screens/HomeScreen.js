@@ -74,11 +74,6 @@ const HomeScreen = ({route, navigation}) => {
             {passDeck: deck})}
           />
           <Button
-            title="Progress"
-            style={styles.buttons}
-            onPress={() => navigation.navigate('Progress')}
-          />
-          <Button
             title="Customize"
             style={styles.buttons}
             onPress={() => navigation.navigate('Customize')}

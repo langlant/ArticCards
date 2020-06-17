@@ -43,7 +43,7 @@ const AboutScreen = ({navigation, route}) =>{
             </Text>
             <Text
                 style={styles.textlink}
-                onPress={() => Linking.openURL('https://www.speechandlanguagekids.com/free-materials/://www.hopkinsallchildrens.org/Patients-Families/Health-Library/HealthDocNew/Delayed-Speech-or-Language-Development')}
+                onPress={() => Linking.openURL('https://www.speechandlanguagekids.com/free-materials/')}
             >
                 Speech and Language Kids 
             </Text>

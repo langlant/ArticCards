@@ -21,7 +21,6 @@ export default function App() {
         <Stack.Screen name="About" component={AboutScreen}/>
         <Stack.Screen name="Customize" component={CustomScreen}/>
         <Stack.Screen name="Cards" component={CardScreen}/>
-        <Stack.Screen name="Progress" component={ProgressScreen}/>
         <Stack.Screen name="Maps" component={MapScreen}/>
       </Stack.Navigator>
     </NavigationContainer>

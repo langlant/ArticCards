@@ -1,13 +1,12 @@
 import React, { useState, useRef,   useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button, Card } from "react-native-elements";
-import { updateArtic } from "../helpers/fb-settings";
-import { State } from "react-native-gesture-handler";
+//import { updateArtic } from "../helpers/fb-settings";
+
 //Cannot navigate to this page, not sure why
 
 //general formatting and importing of the deck. Probably put shuffle function here with imported array
 //Next and previous buttons should bascially refresh page and give next or previous card
-//mastery probably will require setupArticListener (this needs clarification though)
 //Deck will be imported here and the information from SettingScreen will be imported here as well
 const CardScreen = ({route, navigation}) =>{
     
