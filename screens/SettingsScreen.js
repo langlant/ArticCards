@@ -39,6 +39,8 @@ const SettingsScreen = ({route, navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
         //Both of which will be using flatlists preferably side by side
         //A card will only be counted if it meets both values being marked true (category and alpha)
+    
+    
     const [articType, setArticType] = useState([
         {arType: 'CV', addCV: true},
         {arType: 'VC', addCV: true},
@@ -86,36 +88,11 @@ const SettingsScreen = ({route, navigation}) =>{
             />
         )
     }
-/*
-    const renderAlphaType = ({index, item}) =>{
-        
-        return(
-            <CheckBox
-                title={item.alType}
-                checked={item.addAlpha}
-                onPress={() => {
-                    updateArtic({...item, aType: !item.addAlpha});
-                }}
-            />
-        )
-    }
-            //This code was originally in return but moved for commenting
-            //This portion complicates things unneccessarily
-    
-            <Text style={styles.textmenu}>Alphabet Type</Text>
-            <Text style={styles.textsubmenu}> Select what words to include based on their starting letter</Text>
-            <FlatList  
-                keyExtractor={(item) => item.alType}
-                data={alphaType}
-                renderItem={renderAlphaType}
-            />
-
-    */
 
     return(
         <View style={styles.container}>
             <Text style={styles.textmenu}>Artic Type</Text>
-            <Text style={styles.textsubmenu}>Select what words to include based on their cononants and vowels</Text>
+            <Text style={styles.textsubmenu}>Select what words to include based on their consonants and vowels</Text>
             <FlatList  
                 keyExtractor={(item) => item.arType}
                 data={articType}
@@ -126,7 +103,6 @@ const SettingsScreen = ({route, navigation}) =>{
     )
 
 }
-
 
 const styles = StyleSheet.create({
     container: {

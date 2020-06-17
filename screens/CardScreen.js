@@ -12,7 +12,7 @@ import { State } from "react-native-gesture-handler";
 const CardScreen = ({route, navigation}) =>{
     
     const { currentSettings, passDeck } = route.params;
-    
+    const {nCard, setNCard} = useState({});
     const renderCard = ({index, item}) => {
         <View>
             <Card
@@ -50,9 +50,9 @@ const CardScreen = ({route, navigation}) =>{
         var k = deck.indexOf();
         
         if( (k+1) <= deck.length){
-            return deck[k+1];
+             setNCard(deck[k+1]);
         } else{
-            return deck[0];
+            setNCard(deck[0]);
         }
 
     }
@@ -61,9 +61,9 @@ const CardScreen = ({route, navigation}) =>{
         var k = deck.indexOf();
         
         if( (k-1) >= 0){
-            return deck[k-1];
+            setNCard(deck[k-1]);
         } else{
-            return deck[(deck.length - 1)];
+            setNCard(deck[(deck.length - 1)]);
         }
     }
     
@@ -72,7 +72,7 @@ const CardScreen = ({route, navigation}) =>{
     return(
         <View>
             <Text>Cards</Text>
-            {renderCard(deck)}
+            {renderCard(nCard)}
             <View style={styles.row}>
                 <Button
                     title='Next'
