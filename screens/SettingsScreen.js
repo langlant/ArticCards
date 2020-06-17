@@ -4,37 +4,6 @@ import {Text, CheckBox} from "react-native-elements";
 import {FlatList } from "react-native-gesture-handler";
 //this is broken some how can't figure out why.
 
-
-
-/*const alphaType = [
-    {alType: 'A', addAlpha: true},
-    {alType: 'B', addAlpha: true},
-    {alType: 'C', addAlpha: true},
-    {alType: 'D', addAlpha: true},
-    {alType: 'E', addAlpha: true},
-    {alType: 'F', addAlpha: true},
-    {alType: 'G', addAlpha: true},
-    {alType: 'H', addAlpha: true},
-    {alType: 'I', addAlpha: true},
-    {alType: 'J', addAlpha: true},
-    {alType: 'K', addAlpha: true},
-    {alType: 'L', addAlpha: true},
-    {alType: 'M', addAlpha: true},
-    {alType: 'N', addAlpha: true},
-    {alType: 'O', addAlpha: true},
-    {alType: 'P', addAlpha: true},
-    {alType: 'Q', addAlpha: true},
-    {alType: 'R', addAlpha: true},
-    {alType: 'S', addAlpha: true},
-    {alType: 'T', addAlpha: true},
-    {alType: 'U', addAlpha: true},
-    {alType: 'V', addAlpha: true},
-    {alType: 'W', addAlpha: true},
-    {alType: 'X', addAlpha: true},
-    {alType: 'Y', addAlpha: true},
-    {alType: 'Z', addAlpha: true}
-];*/
-
 const SettingsScreen = ({route, navigation}) =>{
         //create a screen with checkbox fields. One for the consonant-vowel field and the other for the alphabet.
         //Both of which will be using flatlists preferably side by side
