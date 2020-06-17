@@ -14,8 +14,6 @@
     "axios": "^0.19.2",
     "expo": "~37.0.3",
     "firebase": "^7.15.1",
-    "google-map-react": "^1.1.7",
-    "google-maps-react": "^2.0.6",
     "node.js": "0.0.1-security",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
