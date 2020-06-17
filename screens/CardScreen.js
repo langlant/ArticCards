@@ -13,6 +13,7 @@ const CardScreen = ({route, navigation}) =>{
     
     const { currentSettings, passDeck } = route.params;
     const {nCard, setNCard} = useState({});
+    
     const renderCard = ({index, item}) => {
         <View>
             <Card

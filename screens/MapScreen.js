@@ -9,7 +9,7 @@ import {
 import {getMap} from '../api/gmap';
 import {gkey} from '../api/gkey'
 
-const mapData = getMap();
+var mapData = `http://maps.googleapis.com/maps/api/place/textsearch/json?query=speech+pathologists&key=${gkey}`; console.log(mapData)
 
 function Map(){
   const [selectedSpeech, setSelectedSpeech] = useState(null);
