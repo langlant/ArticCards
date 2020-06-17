@@ -20,13 +20,10 @@ const HomeScreen = ({route, navigation}) => {
   }, []);
 
   useEffect(() => {
-    if(route.params?.articType){
-      setArticType(route.params.articType);
-    }
     if(route.params?.articCard){
       setCard({imageUrl: state.imageUrl, word: state.word, aType: state.aType, cType: state.cType, mastery: state.mastery})
     }
-  }, [route.params?.articType, route.params?.articCard] );
+  }, [route.params?.articType] );
   
   
   navigation.setOptions({

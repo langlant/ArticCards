@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, Text, Keyboard, View, TouchableWithoutFeedback } from "react-native";
 import { Button, Input } from "react-native-elements";
 import { Dropdown } from "react-native-material-dropdown";
 import { storeArtic } from '../helpers/fb-settings';
@@ -55,9 +55,9 @@ const CustomScreen = ({ route, navigation }) =>{
                 <Button
                 //this will save the cards to the database
                     title="Save"
-                    onPress={() => 
-                        storeArtic({word, aType, cType, imageUrl, mastery})
-                    } 
+                    onPress={() => {
+                        storeArtic({articCard})
+                    }} 
                 />
                 <Button
                     title="Clear"
