@@ -3,9 +3,7 @@ import { StyleSheet, Text, Keyboard, View, TouchableWithoutFeedback } from "reac
 import { Button, Input } from "react-native-elements";
 import { Dropdown } from "react-native-material-dropdown";
 import { storeArtic } from '../helpers/fb-settings';
-//Cannot navigate to this page, not sure why
-
-
+import Toast from 'react-native-root-toast';
 
 const CustomScreen = ({ route, navigation }) =>{
     //create a screen with the ability to add a picture with text to the deck of artic cards
@@ -28,6 +26,8 @@ const CustomScreen = ({ route, navigation }) =>{
         mastery: false
     })
 
+    
+
     return(
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <View>
@@ -36,19 +36,19 @@ const CustomScreen = ({ route, navigation }) =>{
                     placeholder="Enter valid image url"
                     value={articCard.imageUrl}
                     autoCorrect={false}
-                    onChangeText={(val) => setCard({ imageUrl: val })}
+                    onChangeText={(val) => setCard({ ...articCard, imageUrl: val })}
                 />        
                 <Input
                     placeholder="Enter word or phrase"
                     value={articCard.word}
                     autoCorrect={false}
                     onChangeText={(val) => 
-                        setCard({ word: val, aType: val.charAt(0).toUpperCase(), mastery: false})
+                        setCard({ ...articCard, word: val, aType: val.charAt(0).toUpperCase(), mastery: false})
                     }
                 />
                 <Dropdown
                     value={articCard.cType}
-                    onChangeText={(text) => setCard({cType: text})}
+                    onChangeText={(text) => setCard({...articCard, cType: text})}
                     label="Artic Type"
                     data={articDrop}
                 />
@@ -56,14 +56,18 @@ const CustomScreen = ({ route, navigation }) =>{
                 //this will save the cards to the database
                     title="Save"
                     onPress={() => {
-                        storeArtic({articCard})
+                        storeArtic({articCard});
+                        Toast.show(`Saved: ${word.value}!`, {
+                            duration: Toast.durations.SHORT,
+                            animation: true,
+                            hideOnPress: true,
+                        })
                     }} 
                 />
                 <Button
                     title="Clear"
                     onPress={() => {
-                        setCard({word: '', aType: '', cType: '', imageUrl: '', mastery: false});
-                        navigation.navigate('Home');
+                        setCard({...articCard, word: '', aType: '', cType: '', imageUrl: '', mastery: false});
                     }}
                 />
             </View>
