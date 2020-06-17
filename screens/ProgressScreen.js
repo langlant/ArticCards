@@ -1,7 +1,12 @@
+/*
+Removed temporarily, if this app keeps getting developed, hopefully this will be further fleshed out.
+The basic premise was to essentially give a percentage of mastery for each category
+*/
+
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
-
+/*
 const articType = [
     {arType: 'CV'},
     {arType: 'VC'},
@@ -11,6 +16,7 @@ const articType = [
     {arType: 'C1V1C1V2'},
     {arType: 'C1V1C2V2'},
 ];
+*/
 
 //Formatting of this flat list and adding percentages completed of each category based on mastery
 
