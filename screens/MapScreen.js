@@ -13,20 +13,23 @@ import { getMap } from '../api/gmap';
 
 function Map(){
   const [selectedSpeech, setSelectedSpeech] = useState(null);
+  const [mapData, setSMapData] = useState(null);
+
+  useEffect(() => {
+    // setSMapData will be called with results.data updating mapData
+    getMap(setSMapData)
+  }, [])
 
   return(
     <GoogleMap
       defaultZoom={10} defaultCenter={{lat: 42.807091, lng: -86.018860}}
     >
-      {speechData.results.map((speech) => (
+      {mapData && mapData.results.map((speech) => (
         <Marker key={speech.place_id} position={{
           lat: speech.geometry.location.lat, 
           lng: speech.geometry.location.lng
         }}
         onPress={() => {
-          setSelectedSpeech(speech);
-        }}
-        onClick={() => {
           setSelectedSpeech(speech);
         }}
         />
