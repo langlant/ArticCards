@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, Keyboard, TouchableWithoutFeedback } from 'react-native';
-import { NavigationContainer, StackActions } from "@react-navigation/native";
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from './screens/HomeScreen';
 import SettingsScreen from './screens/SettingsScreen';

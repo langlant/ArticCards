@@ -1,4 +1,4 @@
-import React, { useState, useRef,   useEffect } from "react";
+import React, { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button, Card } from "react-native-elements";
 //import { updateArtic } from "../helpers/fb-settings";
