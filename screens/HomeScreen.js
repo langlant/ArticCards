@@ -1,12 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback, Image } from "react-native";
+import { StyleSheet, Text, Keyboard, TouchableOpacity, View, TouchableWithoutFeedback, Image, CheckBox } from "react-native";
 import { Button } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
+import {FlatList } from "react-native-gesture-handler";
 import { initArticDB, setupArticListener } from '../helpers/fb-settings';
 
 
 const HomeScreen = ({route, navigation}) => {
   const [ deck, setDeck] = useState([]);
+
+  const [articType, setArticType] = useState([
+    {arType: 'CV', addCV: true},
+    {arType: 'VC', addCV: true},
+    {arType: 'VV', addCV: true},
+    {arType: 'VCV', addCV: true},
+    {arType: 'CVCV', addCV: true},
+    {arType: 'C1V1C1V2', addCV: true},
+    {arType: 'C1V1C2V2', addCV: true},
+]);
+
   
   useEffect(() => {
     try {
@@ -26,10 +38,27 @@ const HomeScreen = ({route, navigation}) => {
     if(route.params?.deck){
       setDeck(route.params.deck)
     }
+    if(route.params?.articType){
+      setArticType(route.params.articType)
+    }
 
-  }, [route.params?.deckeck, route.params?.articCard] );
+  }, [route.params?.deck, route.params?.articCard, route.params?.articType] );
   
-  
+  const renderCVType = ({index, item}) =>{
+        
+    return(
+        <CheckBox
+            title={item.arType}
+            checked={item.addCV}
+            onPress={() => {
+                let newArr = [... articType];
+                newArr[index] = {...item, addCV: !item.addCV};
+                setArticType(newArr);
+                console.log(newArr);
+            }}
+        />
+    )
+}
   navigation.setOptions({
         headerRight: () => (
           <TouchableOpacity
@@ -71,13 +100,14 @@ const HomeScreen = ({route, navigation}) => {
             title="Start"
             style={styles.buttons}
             onPress={() => navigation.navigate('Cards',
-            {passDeck: deck})}
+            {deck, articType})}
           />
           <Button
             title="Customize"
             style={styles.buttons}
             onPress={() => navigation.navigate('Customize')}
           />
+
         </View>
       </TouchableWithoutFeedback>
     );

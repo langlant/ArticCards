@@ -10,7 +10,9 @@ import { Button, Card } from "react-native-elements";
 //Deck will be imported here and the information from SettingScreen will be imported here as well
 const CardScreen = ({route, navigation}) =>{
     
-    const { currentSettings, passDeck } = route.params;
+    const { articType, deck } = route.params;
+    const [passDeck, setPassDeck] = useState(deck);
+    const [currentSettings, setCurrentSettings] = useState(articType);
     const {nCard, setNCard} = useState({});
 
     const renderCard = ({index, item}) => {
@@ -39,13 +41,13 @@ const CardScreen = ({route, navigation}) =>{
     }
     */
 
-    function buildDeck(){
+    function buildDeck(pDeck, cSettings){
         let deck = new Array();
     
-        for(var i = 0; i < passDeck.length; i++){
-            for(var j = 0; j < currentSettings.length; j++){
-                if((passDeck.cType[i] == currentSettings[j].arType) && (currentSettings[j].addCV == true)){
-                    deck.push(passDeck[i]);
+        for(var i = 0; i < pDeck.length; i++){
+            for(var j = 0; j < cSettings.length; j++){
+                if((pDeck[i].cType == cSettings[j].arType) && (cSettings[j].addCV == true)){
+                    deck.push(pDeck[i]);
                 }
             }
         }
@@ -73,7 +75,7 @@ const CardScreen = ({route, navigation}) =>{
         }
     }
     
-    buildDeck();
+    buildDeck(passDeck, currentSettings);
     
     return(
         <View>
