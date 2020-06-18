@@ -7,7 +7,7 @@ import { initArticDB, setupArticListener } from '../helpers/fb-settings';
 
 const HomeScreen = ({route, navigation}) => {
   const [ deck, setDeck] = useState([]);
-
+  
   useEffect(() => {
     try {
       initArticDB();
