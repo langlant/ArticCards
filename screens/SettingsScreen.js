@@ -44,6 +44,7 @@ const SettingsScreen = ({route, navigation}) =>{
                     
                 },
                 console.log(articType));
+                
             }}
             >
                 <Text style={styles.headerButton}> 

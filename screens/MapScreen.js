@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, Text, View, Linking} from "react-native";
+import { Text, View } from "react-native";
 import {
     withGoogleMap,
     withScriptjs,
@@ -21,15 +21,20 @@ function Map(){
   }, [])
 
   return(
+    
     <GoogleMap
       defaultZoom={10} defaultCenter={{lat: 42.9634, lng: -85.6681}}
     >
       {mapData && mapData.results.map((speech) => (
+        
         <Marker key={speech.place_id} position={{
           lat: speech.geometry.location.lat, 
           lng: speech.geometry.location.lng
         }}
         onPress={() => {
+          setSelectedSpeech(speech);
+        }}
+        onCloseClick={() => {
           setSelectedSpeech(speech);
         }}
         />
