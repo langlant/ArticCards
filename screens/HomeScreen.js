@@ -112,31 +112,6 @@ const styles = StyleSheet.create({
   input: {
     padding: 10,
   },
-  resultsGrid: {
-    borderColor: '#000',
-    borderWidth: 1,
-  },
-  resultsRow: {
-    flexDirection: 'row',
-    borderColor: '#000',
-    borderBottomWidth: 1,
-  },
-  resultsLabelContainer: {
-    borderRightWidth: 1,
-    borderRightColor: '#000',
-    flex: 1,
-  },
-  resultsLabelText: {
-    fontWeight: 'bold',
-    fontSize: 20,
-    padding: 10,
-  },
-  resultsValueText: {
-    fontWeight: 'bold',
-    fontSize: 20,
-    flex: 1,
-    padding: 10,
-  },
 });
 
 export default HomeScreen;
