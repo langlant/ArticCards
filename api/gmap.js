@@ -7,7 +7,7 @@ const gmapServer = axios.create({
 })
 
 
-export const getMap = async (callback) => {
+export const getMap = async (item, callback) => {
     const response = await gmapServer.get(
         `maps/api/place/textsearch/json?query=speech+pathologists&key=${gkey}`
     ); 

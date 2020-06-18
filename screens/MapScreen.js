@@ -22,7 +22,7 @@ function Map(){
 
   return(
     <GoogleMap
-      defaultZoom={10} defaultCenter={{lat: 42.807091, lng: -86.018860}}
+      defaultZoom={10} defaultCenter={{lat: 42.9634, lng: -85.6681}}
     >
       {mapData && mapData.results.map((speech) => (
         <Marker key={speech.place_id} position={{
